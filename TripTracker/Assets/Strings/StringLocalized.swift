@@ -23,6 +23,10 @@ extension String {
         static var unexpected: String { return getLocalizedString(#function) }
         static var ups: String { return getLocalizedString(#function) }
         
+        // MARK: Posts
+        static var comments: String { return getLocalizedString(#function) }
+        static var postedOn: String { return getLocalizedString(#function) }
+        
         internal static func getLocalizedString(_ key: String) -> String {
             return NSLocalizedString(key, comment: key)
         }

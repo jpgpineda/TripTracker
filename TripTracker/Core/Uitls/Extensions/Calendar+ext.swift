@@ -1,0 +1,18 @@
+//
+//  Calendar+ext.swift
+//  TripTracker
+//
+//  Created by javier pineda on 12/05/24.
+//
+
+import Foundation
+
+extension Calendar {
+    func numberOfDaysBetween(_ from: Date, and to: Date) -> Int {
+        let fromDate = startOfDay(for: from)
+        let toDate = startOfDay(for: to)
+        let numberOfDays = dateComponents([.day], from: fromDate, to: toDate)
+        
+        return (numberOfDays.day ?? .zero) + .one
+    }
+}

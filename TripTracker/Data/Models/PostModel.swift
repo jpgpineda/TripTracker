@@ -13,11 +13,13 @@ class PostModel: Object {
     @Persisted var postDescription: String = .empty
     @Persisted var image: String = .empty
     @Persisted var likesCount: Int = .zero
-    @Persisted var postedOn: String = .empty
+    @Persisted var postedOn: Date = Date()
     @Persisted var createdAt: Date = Date()
     @Persisted var userPost: UserModel
     @Persisted var actions = List<ActionModel>()
     @Persisted var commets = List<CommentModel>()
+    @Persisted var isLiked: Bool = false
+    @Persisted var isSaved: Bool = false
     
     convenience init(with post: Post) {
         self.init()
@@ -42,6 +44,8 @@ class CommentModel: Object {
     @Persisted var commentDescription: String = .empty
     @Persisted var likesCount: Int = .zero
     @Persisted var user: UserModel
+    @Persisted var postedOn: Date = Date()
+    @Persisted var isLiked: Bool = false
     
     convenience init(with comment: Comment) {
         self.init()

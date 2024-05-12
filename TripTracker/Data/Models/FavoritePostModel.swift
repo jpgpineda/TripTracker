@@ -13,10 +13,11 @@ class FavoritePostModel: Object {
     @Persisted var postDescription: String = .empty
     @Persisted var image: String = .empty
     @Persisted var likesCount: Int = .zero
-    @Persisted var postedOn: String = .empty
+    @Persisted var postedOn: Date = Date()
     @Persisted var userPost: UserModel
     @Persisted var actions = List<ActionModel>()
     @Persisted var commets = List<CommentModel>()
+    @Persisted var isLiked: Bool = false
     
     convenience init(with postDTO: PostDTO) {
         self.init()

@@ -1,17 +1,18 @@
 //
-//  WelcomeViewController.swift
+//  FavoritesViewControlelr.swift
 //  TripTracker
 //
-//  Created by javier pineda on 11/05/24.
+//  Created by javier pineda on 12/05/24.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class FavoritesViewController: UIViewController {
     ///////////////////////////////////////
     // MARK: Outlets
     ///////////////////////////////////////
-    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var postsTable: UITableView!
     ///////////////////////////////////////
     // MARK: Properties
     ///////////////////////////////////////
