@@ -34,6 +34,9 @@
 		082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC2D2BF0480C006D1B58 /* ApiRequestProtocol.swift */; };
 		082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC2F2BF04826006D1B58 /* RequestManager.swift */; };
 		082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC312BF0484F006D1B58 /* ApiResult.swift */; };
+		082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */; };
+		082BDC372BF04AD6006D1B58 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */; };
+		082BDC392BF04BAA006D1B58 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC382BF04BAA006D1B58 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		082BDC2D2BF0480C006D1B58 /* ApiRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestProtocol.swift; sourceTree = "<group>"; };
 		082BDC2F2BF04826006D1B58 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		082BDC312BF0484F006D1B58 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		082BDC382BF04BAA006D1B58 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 		082BDBF12BF03DB8006D1B58 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				082BDC382BF04BAA006D1B58 /* Colors.xcassets */,
 				082BDBCA2BF03D11006D1B58 /* Assets.xcassets */,
 				082BDBF52BF03DD1006D1B58 /* Animations */,
 				082BDBF22BF03DC0006D1B58 /* Strings */,
@@ -237,6 +244,7 @@
 		082BDC042BF03E1F006D1B58 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				082BDC332BF04AC5006D1B58 /* Post */,
 				082BDC052BF03E25006D1B58 /* Loader */,
 			);
 			path = Components;
@@ -296,6 +304,15 @@
 				082BDC2F2BF04826006D1B58 /* RequestManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		082BDC332BF04AC5006D1B58 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */,
+				082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +434,8 @@
 				082BDC092BF03E35006D1B58 /* LoaderViewController.xib in Resources */,
 				082BDBF42BF03DCE006D1B58 /* Localizable.strings in Resources */,
 				082BDBCB2BF03D11006D1B58 /* Assets.xcassets in Resources */,
+				082BDC372BF04AD6006D1B58 /* PostTableViewCell.xib in Resources */,
+				082BDC392BF04BAA006D1B58 /* Colors.xcassets in Resources */,
 				082BDBC92BF03D10006D1B58 /* Main.storyboard in Resources */,
 				082BDBF72BF03DDC006D1B58 /* loader.json in Resources */,
 			);
@@ -454,6 +473,7 @@
 				082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */,
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
 				082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */,
+				082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */,
 				082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */,
 				082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */,
 				082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */,
