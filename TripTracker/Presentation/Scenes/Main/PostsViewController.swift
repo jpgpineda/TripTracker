@@ -28,7 +28,7 @@ class PostsViewController: UIViewController {
     }
     
     @IBAction func addNewPost(_ sender: UIBarButtonItem) {
-        
+        // TODO: Add logic to show new post screen
     }
 }
 
@@ -39,6 +39,20 @@ extension PostsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
+        cell.setupView(post: posts[indexPath.row])
+        
+        cell.savedButtonPressed.compactMap {$0}.sink { _ in
+            // TODO: Add logic to save the post into favorites
+        }.store(in: &cell.cancellables)
+        
+        cell.commentsButtonPressed.compactMap {$0}.sink { _ in
+            // TODO: Add logic to present the comments screen
+        }.store(in: &cell.cancellables)
+        
+        cell.moreActionsPressed.compactMap {$0}.sink { _ in
+            // TODO: Add logic to present options alert
+        }.store(in: &cell.cancellables)
+        
         return cell
     }
 }
