@@ -12,6 +12,7 @@ typealias ModelOperationCompletionHandler = (_ result: ApiResult<Bool>) -> Void
 
 protocol StorageContext {
     var realmDB: Realm { get set }
+    func saveModels<T>(models: [T]) where T: Object
     func saveModel<T: Object>(model: T, completion: @escaping ModelOperationCompletionHandler)
     func getModel(model: Object.Type, predicate: NSPredicate?) -> [Object]?
     func deleteModel<T: Object>(model: T, completion: @escaping ModelOperationCompletionHandler)
@@ -23,6 +24,16 @@ class StorageContextImplementation: StorageContext {
     
     init(realmDB: Realm) {
         self.realmDB = realmDB
+    }
+    
+    func saveModels<T>(models: [T]) where T: Object {
+        do {
+            try realmDB.write {
+                realmDB.add(models, update: .all)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func saveModel<T: Object>(model: T, completion: @escaping ModelOperationCompletionHandler) {

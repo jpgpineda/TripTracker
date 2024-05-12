@@ -17,6 +17,7 @@ class PostModel: Object {
     @Persisted var createdAt: Date = Date()
     @Persisted var userPost: UserModel
     @Persisted var actions = List<ActionModel>()
+    @Persisted var commets = List<CommentModel>()
     
     convenience init(with post: Post) {
         self.init()
@@ -30,6 +31,9 @@ class PostModel: Object {
         actions.append(objectsIn: post.actions.map({
             ActionModel(with: $0)
         }))
+        commets.append(objectsIn: post.comments.map({
+            CommentModel(with: $0)
+        }))
     }
 }
 
@@ -37,14 +41,22 @@ class CommentModel: Object {
     @Persisted(primaryKey: true) var id: Int = .zero
     @Persisted var commentDescription: String = .empty
     @Persisted var likesCount: Int = .zero
-    @Persisted var userPost: UserModel
+    @Persisted var user: UserModel
     
     convenience init(with comment: Comment) {
         self.init()
         id = comment.id
         commentDescription = comment.description
         likesCount = comment.likesCount
-        userPost = UserModel(with: comment.from)
+        user = UserModel(with: comment.from)
+    }
+    
+    convenience init(with commentDTO: CommentDTO) {
+        self.init()
+        id = commentDTO.id
+        commentDescription = commentDTO.description
+        likesCount = commentDTO.likesCount
+        user = UserModel(with: commentDTO.user)
     }
 }
 
@@ -54,6 +66,11 @@ class ActionModel: Object {
     convenience init(with action: Action) {
         self.init()
         name = action.name.rawValue
+    }
+    
+    convenience init(action: String) {
+        self.init()
+        name = action
     }
 }
 
@@ -67,5 +84,12 @@ class UserModel: Object {
         id = userPost.id
         userName = userPost.userName
         userImageUrl = userPost.userImageURL
+    }
+    
+    convenience init(with userDTO: UserDTO) {
+        self.init()
+        id = userDTO.id
+        userName = userDTO.userName
+        userImageUrl = userDTO.userImageURL
     }
 }
