@@ -14,7 +14,7 @@ class LoaderViewController: UIViewController {
     ///////////////////////////////////////
     @IBOutlet weak var animationContainerView: UIView!
     ///////////////////////////////////////
-    // MARK: Presenter
+    // MARK: Properties
     ///////////////////////////////////////
     private var animationView: LottieAnimationView?
     

@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
     ///////////////////////////////////////
     
     ///////////////////////////////////////
-    // MARK: Presenter
+    // MARK: Properties
     ///////////////////////////////////////
     
     override func viewDidLoad() {
