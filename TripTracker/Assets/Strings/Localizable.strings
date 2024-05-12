@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  TripTracker
+
+  Created by javier pineda on 11/05/24.
+  
+*/
+
+// MARK: ApiErrors
+"invalidResponse"           = "Invalid Response";
+"statusCode"                = "Status code: ";
+"requestFailed"             = "Request Failed: ";
+"invalidData"               = "Invalid Data";
+"JSONConversionFailure"     = "JSON Conversion Failure: ";
+"serializationFailed"       = "Serialization failed";
+"JSONParsingFailure"        = "JSON Parsing Failure";
+"noInternet"                = "No internet connection";
+"unsuccessfull"             = "Unsuccessful: ";
+"unexpected"                = "An unexpected error occured, please try again";
+"noActiveSession"           = "No cuentas con una sesión activa";
+"ups"                       = "Ups!";
