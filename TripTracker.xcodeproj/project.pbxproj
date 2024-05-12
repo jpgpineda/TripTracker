@@ -27,6 +27,13 @@
 		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
 		082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */; };
 		082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC212BF045A3006D1B58 /* ToolsDependency.swift */; };
+		082BDC262BF04771006D1B58 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC252BF04771006D1B58 /* ApiError.swift */; };
+		082BDC282BF047A7006D1B58 /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC272BF047A7006D1B58 /* StringLocalized.swift */; };
+		082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC292BF047DB006D1B58 /* ApiResponseProtocol.swift */; };
+		082BDC2C2BF047F4006D1B58 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC2B2BF047F4006D1B58 /* ApiClient.swift */; };
+		082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC2D2BF0480C006D1B58 /* ApiRequestProtocol.swift */; };
+		082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC2F2BF04826006D1B58 /* RequestManager.swift */; };
+		082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC312BF0484F006D1B58 /* ApiResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,13 @@
 		082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
 		082BDC212BF045A3006D1B58 /* ToolsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsDependency.swift; sourceTree = "<group>"; };
+		082BDC252BF04771006D1B58 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		082BDC272BF047A7006D1B58 /* StringLocalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
+		082BDC292BF047DB006D1B58 /* ApiResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseProtocol.swift; sourceTree = "<group>"; };
+		082BDC2B2BF047F4006D1B58 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		082BDC2D2BF0480C006D1B58 /* ApiRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestProtocol.swift; sourceTree = "<group>"; };
+		082BDC2F2BF04826006D1B58 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		082BDC312BF0484F006D1B58 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,7 @@
 		082BDBC02BF03D10006D1B58 /* TripTracker */ = {
 			isa = PBXGroup;
 			children = (
+				082BDC232BF04738006D1B58 /* Data */,
 				082BDC032BF03E19006D1B58 /* Presentation */,
 				082BDBF82BF03DE2006D1B58 /* Core */,
 				082BDBF12BF03DB8006D1B58 /* Assets */,
@@ -163,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				082BDBF32BF03DCE006D1B58 /* Localizable.strings */,
+				082BDC272BF047A7006D1B58 /* StringLocalized.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -259,6 +275,27 @@
 				082BDC212BF045A3006D1B58 /* ToolsDependency.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		082BDC232BF04738006D1B58 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				082BDC242BF04744006D1B58 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		082BDC242BF04744006D1B58 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				082BDC2B2BF047F4006D1B58 /* ApiClient.swift */,
+				082BDC252BF04771006D1B58 /* ApiError.swift */,
+				082BDC2D2BF0480C006D1B58 /* ApiRequestProtocol.swift */,
+				082BDC292BF047DB006D1B58 /* ApiResponseProtocol.swift */,
+				082BDC312BF0484F006D1B58 /* ApiResult.swift */,
+				082BDC2F2BF04826006D1B58 /* RequestManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,10 +447,17 @@
 				082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */,
 				082BDBC22BF03D10006D1B58 /* AppDelegate.swift in Sources */,
 				082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */,
+				082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */,
 				082BDBC42BF03D10006D1B58 /* SceneDelegate.swift in Sources */,
+				082BDC262BF04771006D1B58 /* ApiError.swift in Sources */,
+				082BDC282BF047A7006D1B58 /* StringLocalized.swift in Sources */,
 				082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */,
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
+				082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */,
+				082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */,
+				082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */,
 				082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */,
+				082BDC2C2BF047F4006D1B58 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
