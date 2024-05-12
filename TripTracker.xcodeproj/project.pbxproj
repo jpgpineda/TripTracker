@@ -26,6 +26,7 @@
 		082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC112BF03F1E006D1B58 /* Lottie */; };
 		082BDC152BF03F29006D1B58 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC142BF03F29006D1B58 /* Swinject */; };
 		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
+		082BDC1B2BF04139006D1B58 /* ToolsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC1A2BF04139006D1B58 /* ToolsDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		082BDC062BF03E35006D1B58 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		082BDC072BF03E35006D1B58 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
 		082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		082BDC1A2BF04139006D1B58 /* ToolsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				082BDBFE2BF03E01006D1B58 /* ModuleManager.swift */,
+				082BDC1A2BF04139006D1B58 /* ToolsDependency.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082BDC1B2BF04139006D1B58 /* ToolsDependency.swift in Sources */,
 				082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */,
 				082BDBC22BF03D10006D1B58 /* AppDelegate.swift in Sources */,
 				082BDBFF2BF03E01006D1B58 /* ModuleManager.swift in Sources */,

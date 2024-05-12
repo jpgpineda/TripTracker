@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Constants {
+    static let loaderAnimation: String = "loader"
+}

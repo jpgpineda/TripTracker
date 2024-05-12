@@ -8,5 +8,20 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    ///////////////////////////////////////
+    // MARK: Outlets
+    ///////////////////////////////////////
     
+    ///////////////////////////////////////
+    // MARK: Presenter
+    ///////////////////////////////////////
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+    
+    private func setupView() {
+        
+    }
 }

@@ -6,24 +6,29 @@
 //
 
 import UIKit
+import Lottie
 
 class LoaderViewController: UIViewController {
-
+    ///////////////////////////////////////
+    // MARK: Outlets
+    ///////////////////////////////////////
+    @IBOutlet weak var animationContainerView: UIView!
+    ///////////////////////////////////////
+    // MARK: Presenter
+    ///////////////////////////////////////
+    private var animationView: LottieAnimationView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func setupView() {
+        animationView = .init(name: Constants.loaderAnimation)
+        animationView?.frame = animationContainerView.bounds
+        animationView?.contentMode = .scaleAspectFit
+        animationView?.loopMode = .loop
+        animationContainerView.addSubview(animationView ?? UIView())
+        animationView?.play()
     }
-    */
-
 }
