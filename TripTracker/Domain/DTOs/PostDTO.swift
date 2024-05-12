@@ -14,6 +14,7 @@ struct PostDTO {
     let user: UserDTO
     let actions: [String]
     let postedOn: String
+    let commets: [CommentDTO]
     
     init(with model: PostModel) {
         id = model.id
@@ -25,6 +26,24 @@ struct PostDTO {
             return $0.name
         }))
         postedOn = model.postedOn
+        commets = Array(model.commets).compactMap({
+            CommentDTO(with: $0)
+        })
+    }
+    
+    init(with favoritePostModel: FavoritePostModel) {
+        id = favoritePostModel.id
+        description = favoritePostModel.postDescription
+        image = favoritePostModel.image
+        likesCount = favoritePostModel.likesCount
+        user = UserDTO(with: favoritePostModel.userPost)
+        actions = Array(favoritePostModel.actions.map({
+            return $0.name
+        }))
+        postedOn = favoritePostModel.postedOn
+        commets = Array(favoritePostModel.commets).compactMap({
+            CommentDTO(with: $0)
+        })
     }
     
     init(with entity: Post) {
@@ -37,6 +56,9 @@ struct PostDTO {
             return $0.name.rawValue
         }))
         postedOn = entity.postedOn
+        commets = entity.comments.compactMap({
+            CommentDTO(with: $0)
+        })
     }
 }
 
@@ -50,7 +72,14 @@ struct CommentDTO {
         id = model.id
         description = model.commentDescription
         likesCount = model.likesCount
-        user = UserDTO(with: model.userPost)
+        user = UserDTO(with: model.user)
+    }
+    
+    init(with entity: Comment) {
+        id = entity.id
+        description = entity.description
+        likesCount = entity.likesCount
+        user = UserDTO(with: entity.from)
     }
 }
 

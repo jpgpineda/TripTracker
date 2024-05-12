@@ -16,5 +16,5 @@ struct HTTPMethod {
 }
 
 struct Host {
-    static let marketStack = "https://run.mocky.io/v3/"
+    static let mainMock = "https://run.mocky.io/v3/"
 }
