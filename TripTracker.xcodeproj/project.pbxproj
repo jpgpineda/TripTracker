@@ -25,7 +25,8 @@
 		082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC112BF03F1E006D1B58 /* Lottie */; };
 		082BDC152BF03F29006D1B58 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC142BF03F29006D1B58 /* Swinject */; };
 		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
-		082BDC1D2BF0448F006D1B58 /* Dependencies in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC1C2BF0448F006D1B58 /* Dependencies */; };
+		082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */; };
+		082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC212BF045A3006D1B58 /* ToolsDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,8 @@
 		082BDC062BF03E35006D1B58 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		082BDC072BF03E35006D1B58 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
 		082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		082BDC1C2BF0448F006D1B58 /* Dependencies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dependencies; sourceTree = "<group>"; };
+		082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
+		082BDC212BF045A3006D1B58 /* ToolsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +187,7 @@
 		082BDBF92BF03DE7006D1B58 /* Uitls */ = {
 			isa = PBXGroup;
 			children = (
-				082BDC1C2BF0448F006D1B58 /* Dependencies */,
+				082BDC1E2BF04576006D1B58 /* Dependencies */,
 				082BDC002BF03E05006D1B58 /* Extensions */,
 			);
 			path = Uitls;
@@ -248,6 +250,15 @@
 				082BDBC72BF03D10006D1B58 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		082BDC1E2BF04576006D1B58 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */,
+				082BDC212BF045A3006D1B58 /* ToolsDependency.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +379,6 @@
 				082BDBCE2BF03D11006D1B58 /* LaunchScreen.storyboard in Resources */,
 				082BDC092BF03E35006D1B58 /* LoaderViewController.xib in Resources */,
 				082BDBF42BF03DCE006D1B58 /* Localizable.strings in Resources */,
-				082BDC1D2BF0448F006D1B58 /* Dependencies in Resources */,
 				082BDBCB2BF03D11006D1B58 /* Assets.xcassets in Resources */,
 				082BDBC92BF03D10006D1B58 /* Main.storyboard in Resources */,
 				082BDBF72BF03DDC006D1B58 /* loader.json in Resources */,
@@ -396,8 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */,
 				082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */,
 				082BDBC22BF03D10006D1B58 /* AppDelegate.swift in Sources */,
+				082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */,
 				082BDBC42BF03D10006D1B58 /* SceneDelegate.swift in Sources */,
 				082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */,
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
