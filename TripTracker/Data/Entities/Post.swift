@@ -19,7 +19,7 @@ struct Post: Codable {
     let from: User
     let actions: [Action]
     let comments: [Comment]
-    let postedOn: String
+    let postedOn: Date
     let createdAt: Date
 
     enum CodingKeys: String, CodingKey {
@@ -36,12 +36,14 @@ struct Comment: Codable {
     let description: String
     let likesCount: Int
     let from: User
+    let postedOn: Date
     
     enum CodingKeys: String, CodingKey {
         case id
         case description
         case likesCount = "likes_count"
         case from
+        case postedOn
     }
 }
 

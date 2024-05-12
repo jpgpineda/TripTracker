@@ -13,8 +13,19 @@ struct PostDTO {
     let likesCount, id: Int
     let user: UserDTO
     let actions: [String]
-    let postedOn: String
+    let postedOn: Date
     let commets: [CommentDTO]
+    var isLiked: Bool = false
+    var isSaved: Bool = false
+    
+    var formattedPostDate: String {
+        let calendar = Calendar.current
+        return String(format: .Localized.postedOn, calendar.numberOfDaysBetween(postedOn, and: Date()))
+    }
+    
+    var formattedComments: String {
+        return String(format: .Localized.comments, commets.count)
+    }
     
     init(with model: PostModel) {
         id = model.id
@@ -67,12 +78,14 @@ struct CommentDTO {
     let description: String
     let likesCount: Int
     let user: UserDTO
+    let postedOn: Date
     
     init(with model: CommentModel) {
         id = model.id
         description = model.commentDescription
         likesCount = model.likesCount
         user = UserDTO(with: model.user)
+        postedOn = model.postedOn
     }
     
     init(with entity: Comment) {
@@ -80,6 +93,7 @@ struct CommentDTO {
         description = entity.description
         likesCount = entity.likesCount
         user = UserDTO(with: entity.from)
+        postedOn = entity.postedOn
     }
 }
 

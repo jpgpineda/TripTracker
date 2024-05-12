@@ -32,7 +32,7 @@
 		082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC012BF03E14006D1B58 /* UIVIewController+Ext.swift */; };
 		082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC062BF03E35006D1B58 /* LoaderViewController.swift */; };
 		082BDC092BF03E35006D1B58 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC072BF03E35006D1B58 /* LoaderViewController.xib */; };
-		082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */; };
+		082BDC0D2BF03E49006D1B58 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC0C2BF03E49006D1B58 /* PostsViewController.swift */; };
 		082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC112BF03F1E006D1B58 /* Lottie */; };
 		082BDC152BF03F29006D1B58 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC142BF03F29006D1B58 /* Swinject */; };
 		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
@@ -48,6 +48,10 @@
 		082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */; };
 		082BDC372BF04AD6006D1B58 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */; };
 		082BDC392BF04BAA006D1B58 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC382BF04BAA006D1B58 /* Colors.xcassets */; };
+		08E4479D2BF151F900F1E6F7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */; };
+		08E4479F2BF1531C00F1E6F7 /* UITableView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */; };
+		08E447A12BF156DD00F1E6F7 /* Calendar+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */; };
+		08E447A32BF1574400F1E6F7 /* Int+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447A22BF1574400F1E6F7 /* Int+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +101,7 @@
 		082BDC012BF03E14006D1B58 /* UIVIewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Ext.swift"; sourceTree = "<group>"; };
 		082BDC062BF03E35006D1B58 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		082BDC072BF03E35006D1B58 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
-		082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		082BDC0C2BF03E49006D1B58 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleManager.swift; sourceTree = "<group>"; };
 		082BDC212BF045A3006D1B58 /* ToolsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsDependency.swift; sourceTree = "<group>"; };
 		082BDC252BF04771006D1B58 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -110,6 +114,10 @@
 		082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		082BDC382BF04BAA006D1B58 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ext.swift"; sourceTree = "<group>"; };
+		08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ext.swift"; sourceTree = "<group>"; };
+		08E447A22BF1574400F1E6F7 /* Int+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +328,9 @@
 			children = (
 				082BDC012BF03E14006D1B58 /* UIVIewController+Ext.swift */,
 				0817E7D02BF11E81007AA78E /* String+ext.swift */,
+				08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */,
+				08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */,
+				08E447A22BF1574400F1E6F7 /* Int+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +365,7 @@
 		082BDC0A2BF03E39006D1B58 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				08E4479B2BF151E800F1E6F7 /* Favorites */,
 				082BDC0B2BF03E3D006D1B58 /* Main */,
 			);
 			path = Scenes;
@@ -362,7 +374,7 @@
 		082BDC0B2BF03E3D006D1B58 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */,
+				082BDC0C2BF03E49006D1B58 /* PostsViewController.swift */,
 				082BDBC72BF03D10006D1B58 /* Main.storyboard */,
 			);
 			path = Main;
@@ -410,6 +422,14 @@
 				082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		08E4479B2BF151E800F1E6F7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,11 +581,12 @@
 			files = (
 				082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */,
 				0817E7E42BF14BFD007AA78E /* PostUseCase.swift in Sources */,
-				082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */,
+				082BDC0D2BF03E49006D1B58 /* PostsViewController.swift in Sources */,
 				082BDBC22BF03D10006D1B58 /* AppDelegate.swift in Sources */,
 				082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */,
 				082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */,
 				082BDBC42BF03D10006D1B58 /* SceneDelegate.swift in Sources */,
+				08E447A12BF156DD00F1E6F7 /* Calendar+ext.swift in Sources */,
 				082BDC262BF04771006D1B58 /* ApiError.swift in Sources */,
 				0817E7E12BF1456E007AA78E /* FavoritePostModel.swift in Sources */,
 				0817E7D92BF1287E007AA78E /* MakeComment.swift in Sources */,
@@ -580,7 +601,10 @@
 				0817E7CF2BF11E48007AA78E /* PostModel.swift in Sources */,
 				0817E7DC2BF13EEE007AA78E /* PostApiGateway.swift in Sources */,
 				0817E7D12BF11E81007AA78E /* String+ext.swift in Sources */,
+				08E4479F2BF1531C00F1E6F7 /* UITableView+ext.swift in Sources */,
+				08E447A32BF1574400F1E6F7 /* Int+ext.swift in Sources */,
 				0817E7D52BF122E2007AA78E /* PostDTO.swift in Sources */,
+				08E4479D2BF151F900F1E6F7 /* FavoritesViewController.swift in Sources */,
 				082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */,
 				0817E7CC2BF11DB2007AA78E /* Post.swift in Sources */,
 				082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */,
