@@ -23,6 +23,9 @@
 		082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC062BF03E35006D1B58 /* LoaderViewController.swift */; };
 		082BDC092BF03E35006D1B58 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082BDC072BF03E35006D1B58 /* LoaderViewController.xib */; };
 		082BDC0D2BF03E49006D1B58 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC0C2BF03E49006D1B58 /* WelcomeViewController.swift */; };
+		082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC112BF03F1E006D1B58 /* Lottie */; };
+		082BDC152BF03F29006D1B58 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC142BF03F29006D1B58 /* Swinject */; };
+		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */,
+				082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */,
+				082BDC152BF03F29006D1B58 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +274,11 @@
 			dependencies = (
 			);
 			name = TripTracker;
+			packageProductDependencies = (
+				082BDC112BF03F1E006D1B58 /* Lottie */,
+				082BDC142BF03F29006D1B58 /* Swinject */,
+				082BDC172BF03F46006D1B58 /* RealmSwift */,
+			);
 			productName = TripTracker;
 			productReference = 082BDBBE2BF03D10006D1B58 /* TripTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -340,6 +351,12 @@
 				Base,
 			);
 			mainGroup = 082BDBB52BF03D10006D1B58;
+			packageReferences = (
+				082BDC102BF03F1E006D1B58 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */,
+				082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 082BDBBF2BF03D10006D1B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -739,6 +756,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		082BDC102BF03F1E006D1B58 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+		082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.50.0;
+			};
+		};
+		082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		082BDC112BF03F1E006D1B58 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 082BDC102BF03F1E006D1B58 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		082BDC142BF03F29006D1B58 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		082BDC172BF03F46006D1B58 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 082BDBB62BF03D10006D1B58 /* Project object */;
 }
