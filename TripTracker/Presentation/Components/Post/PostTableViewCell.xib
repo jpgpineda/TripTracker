@@ -162,6 +162,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="likePostButton" destination="A8o-Dn-2w8" id="Vfg-Ok-L4T"/>
                 <outlet property="postCommentsLabel" destination="NvE-bV-7NN" id="osY-vN-yP3"/>
                 <outlet property="postDateLabel" destination="Ng7-Bb-xYS" id="fui-Xi-OJH"/>
                 <outlet property="postDescriptionLabel" destination="SKm-rx-QHW" id="Eag-j7-pdo"/>
