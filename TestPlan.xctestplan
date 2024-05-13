@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "8AFC075B-40AA-4939-8680-6F7CFA50D05E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TripTracker.xcodeproj",
+        "identifier" : "08E448032BF23AD900F1E6F7",
+        "name" : "TripTrackerTests"
+      }
+    }
+  ],
+  "version" : 1
+}
