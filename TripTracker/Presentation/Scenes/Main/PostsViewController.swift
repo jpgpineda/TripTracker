@@ -69,17 +69,17 @@ extension PostsViewController: UITableViewDataSource {
         let post = posts[indexPath.row]
         cell.setupView(post: post)
         
-        cell.savedButtonPressed.compactMap {$0}.sink { [weak self] _ in
+        cell.savedButtonPressed.sink { [weak self] _ in
             self?.viewModel?.input.savePost.send(post)
         }.store(in: &cell.cancellables)
         
-        cell.commentsButtonPressed.compactMap {$0}.sink { [weak self] _ in
+        cell.commentsButtonPressed.sink { [weak self] _ in
             guard let viewController = ModuleManager.shared.postDependency.makeCommentsViewController(postId: post.id,
                                                                                                       comments: post.commets) else { return }
             self?.navigationController?.present(viewController, animated: true)
         }.store(in: &cell.cancellables)
         
-        cell.moreActionsPressed.compactMap {$0}.sink { [weak self] _ in
+        cell.moreActionsPressed.sink { [weak self] _ in
             self?.showConfimation(title: .Localized.reportPost,
                                   message: .empty,
                                   cancel: .Localized.cancel,

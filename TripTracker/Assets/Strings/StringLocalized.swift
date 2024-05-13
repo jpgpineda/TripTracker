@@ -33,8 +33,10 @@ extension String {
         static var postDescriptionHint: String { return getLocalizedString(#function) }
         static var newPostConfirmation: String { return getLocalizedString(#function) }
         static var savedPostConfirmation: String { return getLocalizedString(#function) }
+        static var deletedPostConfirmation: String { return getLocalizedString(#function) }
         static var postReported: String { return getLocalizedString(#function) }
         static var reportPost: String { return getLocalizedString(#function) }
+        static var emptyFavorites: String { return getLocalizedString(#function) }
         
         // MARK: Tools
         static var atenttion: String { return getLocalizedString(#function) }

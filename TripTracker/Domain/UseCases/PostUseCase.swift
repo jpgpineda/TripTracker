@@ -16,6 +16,7 @@ protocol PostUseCase {
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
     func addNewComment(parameters: AddNewCommentRequest) async -> ApiResult<String>
     func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String>
+    func deleteFavorite(postId: Int, completion: @escaping ModelOperationCompletionHandler)
 }
 
 class PostUseCaseImplementation: PostUseCase {
@@ -67,5 +68,9 @@ class PostUseCaseImplementation: PostUseCase {
     
     func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String> {
         return await apiGateway.addLikeToComment(parameters: parameters)
+    }
+    
+    func deleteFavorite(postId: Int, completion: @escaping ModelOperationCompletionHandler) {
+        apiGateway.deleteFavorite(postId: postId, completion: completion)
     }
 }

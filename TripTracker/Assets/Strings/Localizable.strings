@@ -30,8 +30,10 @@
 "postDescriptionHint"       = "Describe your picture";
 "newPostConfirmation"       = "Your post has been created successfully";
 "savedPostConfirmation"     = "Your post has been saved successfully";
+"deletedPostConfirmation"   = "Your post has been deleted successfully";
 "postReported"              = "The post has been reported";
 "reportPost"                = "Do you want to report this post?";
+"emptyFavorites"            = "You don't have any favorites yet";
 
 // MARK: Tools
 "atenttion"                 = "Atenttion!!";
