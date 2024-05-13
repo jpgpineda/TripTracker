@@ -28,7 +28,8 @@ class PostsViewController: UIViewController {
     }
     
     @IBAction func addNewPost(_ sender: UIBarButtonItem) {
-        // TODO: Add logic to show new post screen
+        guard let viewController = ModuleManager.shared.postDependency.makeNewPostViewController() else { return }
+        navigationController?.present(viewController, animated: true)
     }
 }
 
