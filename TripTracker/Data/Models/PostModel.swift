@@ -33,7 +33,8 @@ class PostModel: Object {
         actions.append(objectsIn: post.actions.map({
             ActionModel(with: $0)
         }))
-        commets.append(objectsIn: post.comments.map({
+        guard let comments = post.comments else { return }
+        commets.append(objectsIn: comments.map({
             CommentModel(with: $0)
         }))
     }

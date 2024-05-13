@@ -28,7 +28,11 @@ struct PostDTO {
     }
     
     var formattedComments: String {
-        return String(format: .Localized.comments, commets.count)
+        if commets.isEmpty {
+            return .Localized.withoutComments
+        } else {
+            return String(format: .Localized.comments, commets.count)
+        }
     }
     
     var imageURl: URL? {
@@ -75,9 +79,9 @@ struct PostDTO {
             return $0.name.rawValue
         }))
         postedOn = entity.postedOn
-        commets = entity.comments.compactMap({
+        commets = entity.comments?.compactMap({
             CommentDTO(with: $0)
-        })
+        }) ?? []
     }
 }
 
