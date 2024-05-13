@@ -15,6 +15,8 @@ protocol PostApiGateway {
     func savePost(post: FavoritePostModel, completion: @escaping ModelOperationCompletionHandler)
     func getFavoritesPosts() -> [FavoritePostModel]?
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
+    func addComment(parameters: AddNewCommentRequest) async -> ApiResult<String>
+    func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String>
 }
 
 class PostApiGatewayImplementation: PostApiGateway {
@@ -57,6 +59,26 @@ class PostApiGatewayImplementation: PostApiGateway {
     }
     
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String> {
+        guard let apiRequest = parameters.apiRequest else { return .failure(ApiError.unknown) }
+        do {
+            let response = try await apiClient.fetch(type: MakePostResponse.self, with: apiRequest)
+            return .success(response.message)
+        } catch {
+            return .failure(ApiError.requestFailed(description: error.localizedDescription))
+        }
+    }
+    
+    func addComment(parameters: AddNewCommentRequest) async -> ApiResult<String> {
+        guard let apiRequest = parameters.apiRequest else { return .failure(ApiError.unknown) }
+        do {
+            let response = try await apiClient.fetch(type: MakePostResponse.self, with: apiRequest)
+            return .success(response.message)
+        } catch {
+            return .failure(ApiError.requestFailed(description: error.localizedDescription))
+        }
+    }
+    
+    func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String> {
         guard let apiRequest = parameters.apiRequest else { return .failure(ApiError.unknown) }
         do {
             let response = try await apiClient.fetch(type: MakePostResponse.self, with: apiRequest)

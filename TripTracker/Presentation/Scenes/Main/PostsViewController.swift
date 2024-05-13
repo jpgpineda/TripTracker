@@ -17,8 +17,8 @@ class PostsViewController: UIViewController {
     // MARK: Properties
     ///////////////////////////////////////
     var posts: [PostDTO] = [PostDTO]()
-    var cancelBag = Set<AnyCancellable>()
-    var viewModel: PostsViewModel?
+    private var cancelBag = Set<AnyCancellable>()
+    private var viewModel: PostsViewModel?
     private let configurator = PostsConfiguratorImplementation()
     
     override func viewDidLoad() {
@@ -74,7 +74,8 @@ extension PostsViewController: UITableViewDataSource {
         }.store(in: &cell.cancellables)
         
         cell.commentsButtonPressed.compactMap {$0}.sink { [weak self] _ in
-            guard let viewController = ModuleManager.shared.postDependency.makeCommentsViewController(comments: post.commets) else { return }
+            guard let viewController = ModuleManager.shared.postDependency.makeCommentsViewController(postId: post.id,
+                                                                                                      comments: post.commets) else { return }
             self?.navigationController?.present(viewController, animated: true)
         }.store(in: &cell.cancellables)
         

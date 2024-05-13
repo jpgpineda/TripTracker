@@ -8,6 +8,7 @@
 import Foundation
 
 struct MakeComment: Codable {
+    let postId: Int
     let description: String
     let from: User
 }

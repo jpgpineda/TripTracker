@@ -18,12 +18,14 @@ class CommentTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var postDateLabel: UILabel!
+    @IBOutlet weak var likesSumLabel: UILabel!
     ///////////////////////////////////////
     // MARK: Properties
     ///////////////////////////////////////
     static let identifier = "CommentTableViewCell"
     var cancellable: AnyCancellable?
     let likedButtonPressed = PassthroughSubject<Void, Never>()
+    var isLiked: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,9 +37,12 @@ class CommentTableViewCell: UITableViewCell {
         userNameLabel.text = comment.user.userName
         descriptionLabel.text = comment.description
         postDateLabel.text = comment.formattedPostDate
+        likesSumLabel.text = comment.formattedLikesSum
     }
     
     @IBAction func likePost(_ sender: UIButton) {
+        isLiked = !isLiked
+        likeButton.setImage(isLiked ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart"), for: .normal)
         likedButtonPressed.send()
     }
 }
