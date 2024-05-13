@@ -43,7 +43,7 @@ struct Comment: Codable {
         case description
         case likesCount = "likes_count"
         case from
-        case postedOn
+        case postedOn = "posted_on"
     }
 }
 

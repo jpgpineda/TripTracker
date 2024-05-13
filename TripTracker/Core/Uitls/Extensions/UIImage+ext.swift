@@ -19,3 +19,11 @@ extension UIImage {
         return imageData.base64EncodedString()
     }
 }
+
+extension UIImageView {
+    func setupCircularImage() {
+        self.layer.cornerRadius = self.frame.width / .two
+        self.layer.borderWidth = .one
+        self.layer.borderColor = UIColor.icon.cgColor
+    }
+}

@@ -20,11 +20,19 @@ struct PostDTO {
     
     var formattedPostDate: String {
         let calendar = Calendar.current
-        return String(format: .Localized.postedOn, calendar.numberOfDaysBetween(postedOn, and: Date()))
+        let daysPassed = calendar.numberOfDaysBetween(postedOn, and: Date())
+        if daysPassed > .thirty {
+            return postedOn.getPostedDate()
+        }
+        return String(format: .Localized.postedOn, daysPassed)
     }
     
     var formattedComments: String {
         return String(format: .Localized.comments, commets.count)
+    }
+    
+    var imageURl: URL? {
+        return URL(string: image)
     }
     
     init(with model: PostModel) {
@@ -107,6 +115,10 @@ struct UserDTO {
     let id: Int
     let userName: String
     let userImageURL: String
+    
+    var imageUrl: URL? {
+        return URL(string: userImageURL)
+    }
     
     init(with model: UserModel) {
         id = model.id

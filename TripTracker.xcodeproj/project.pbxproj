@@ -69,6 +69,12 @@
 		08E447C42BF1B15600F1E6F7 /* NewPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C32BF1B15600F1E6F7 /* NewPostConfigurator.swift */; };
 		08E447C62BF1C1ED00F1E6F7 /* UIVIew+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */; };
 		08E447C82BF1C21A00F1E6F7 /* UITextView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */; };
+		08E447CA2BF1D73C00F1E6F7 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C92BF1D73C00F1E6F7 /* PostsViewModel.swift */; };
+		08E447CC2BF1D9E100F1E6F7 /* PostsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447CB2BF1D9E100F1E6F7 /* PostsConfigurator.swift */; };
+		08E447CF2BF1F99400F1E6F7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 08E447CE2BF1F99400F1E6F7 /* SDWebImage */; };
+		08E447D12BF2086500F1E6F7 /* CGFloat+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D02BF2086500F1E6F7 /* CGFloat+ext.swift */; };
+		08E447D32BF2088000F1E6F7 /* Double+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D22BF2088000F1E6F7 /* Double+ext.swift */; };
+		08E447D82BF20DF800F1E6F7 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D72BF20DF800F1E6F7 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +158,11 @@
 		08E447C32BF1B15600F1E6F7 /* NewPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostConfigurator.swift; sourceTree = "<group>"; };
 		08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+ext.swift"; sourceTree = "<group>"; };
 		08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+ext.swift"; sourceTree = "<group>"; };
+		08E447C92BF1D73C00F1E6F7 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		08E447CB2BF1D9E100F1E6F7 /* PostsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsConfigurator.swift; sourceTree = "<group>"; };
+		08E447D02BF2086500F1E6F7 /* CGFloat+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+ext.swift"; sourceTree = "<group>"; };
+		08E447D22BF2088000F1E6F7 /* Double+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ext.swift"; sourceTree = "<group>"; };
+		08E447D72BF20DF800F1E6F7 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +172,7 @@
 			files = (
 				082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */,
 				082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */,
+				08E447CF2BF1F99400F1E6F7 /* SDWebImage in Frameworks */,
 				082BDC152BF03F29006D1B58 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,17 +374,20 @@
 		082BDC002BF03E05006D1B58 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				082BDC012BF03E14006D1B58 /* UIVIewController+Ext.swift */,
-				0817E7D02BF11E81007AA78E /* String+ext.swift */,
-				08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */,
 				08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */,
 				08E447A22BF1574400F1E6F7 /* Int+ext.swift */,
-				08E447A92BF191D400F1E6F7 /* UILabel+ext.swift */,
-				08E447AB2BF1938700F1E6F7 /* UITextField+ext.swift */,
+				0817E7D02BF11E81007AA78E /* String+ext.swift */,
 				08E447B72BF19CA100F1E6F7 /* UIButton+ext.swift */,
 				08E447C12BF1B09300F1E6F7 /* UIImage+ext.swift */,
-				08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */,
+				08E447A92BF191D400F1E6F7 /* UILabel+ext.swift */,
+				08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */,
+				08E447AB2BF1938700F1E6F7 /* UITextField+ext.swift */,
 				08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */,
+				08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */,
+				082BDC012BF03E14006D1B58 /* UIVIewController+Ext.swift */,
+				08E447D02BF2086500F1E6F7 /* CGFloat+ext.swift */,
+				08E447D22BF2088000F1E6F7 /* Double+ext.swift */,
+				08E447D72BF20DF800F1E6F7 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -419,7 +434,9 @@
 		082BDC0B2BF03E3D006D1B58 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				08E447CB2BF1D9E100F1E6F7 /* PostsConfigurator.swift */,
 				082BDC0C2BF03E49006D1B58 /* PostsViewController.swift */,
+				08E447C92BF1D73C00F1E6F7 /* PostsViewModel.swift */,
 				082BDBC72BF03D10006D1B58 /* Main.storyboard */,
 			);
 			path = Main;
@@ -527,6 +544,7 @@
 				082BDC112BF03F1E006D1B58 /* Lottie */,
 				082BDC142BF03F29006D1B58 /* Swinject */,
 				082BDC172BF03F46006D1B58 /* RealmSwift */,
+				08E447CE2BF1F99400F1E6F7 /* SDWebImage */,
 			);
 			productName = TripTracker;
 			productReference = 082BDBBE2BF03D10006D1B58 /* TripTracker.app */;
@@ -605,6 +623,7 @@
 				082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */,
 				082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 082BDBBF2BF03D10006D1B58 /* Products */;
 			projectDirPath = "";
@@ -659,12 +678,14 @@
 			files = (
 				082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */,
 				0817E7E42BF14BFD007AA78E /* PostUseCase.swift in Sources */,
+				08E447CC2BF1D9E100F1E6F7 /* PostsConfigurator.swift in Sources */,
 				082BDC0D2BF03E49006D1B58 /* PostsViewController.swift in Sources */,
 				082BDBC22BF03D10006D1B58 /* AppDelegate.swift in Sources */,
 				082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */,
 				08E447B52BF19A5D00F1E6F7 /* NewPostViewController.swift in Sources */,
 				082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */,
 				082BDBC42BF03D10006D1B58 /* SceneDelegate.swift in Sources */,
+				08E447D82BF20DF800F1E6F7 /* Date+Ext.swift in Sources */,
 				08E447BA2BF19F1200F1E6F7 /* PostDependency.swift in Sources */,
 				08E447C42BF1B15600F1E6F7 /* NewPostConfigurator.swift in Sources */,
 				08E447A12BF156DD00F1E6F7 /* Calendar+ext.swift in Sources */,
@@ -673,6 +694,7 @@
 				08E447AC2BF1938700F1E6F7 /* UITextField+ext.swift in Sources */,
 				0817E7E12BF1456E007AA78E /* FavoritePostModel.swift in Sources */,
 				08E447BE2BF1A50E00F1E6F7 /* NewPostViewModel.swift in Sources */,
+				08E447D32BF2088000F1E6F7 /* Double+ext.swift in Sources */,
 				0817E7D92BF1287E007AA78E /* MakeComment.swift in Sources */,
 				082BDC282BF047A7006D1B58 /* StringLocalized.swift in Sources */,
 				0817E7C92BF05B6A007AA78E /* StorageContext.swift in Sources */,
@@ -680,6 +702,7 @@
 				08E447C62BF1C1ED00F1E6F7 /* UIVIew+ext.swift in Sources */,
 				082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */,
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
+				08E447D12BF2086500F1E6F7 /* CGFloat+ext.swift in Sources */,
 				08E447C22BF1B09300F1E6F7 /* UIImage+ext.swift in Sources */,
 				082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */,
 				082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */,
@@ -697,6 +720,7 @@
 				08E447BC2BF1A2D500F1E6F7 /* AddNewPostRequest.swift in Sources */,
 				08E447AA2BF191D400F1E6F7 /* UILabel+ext.swift in Sources */,
 				08E447A72BF1912A00F1E6F7 /* CommentsViewController.swift in Sources */,
+				08E447CA2BF1D73C00F1E6F7 /* PostsViewModel.swift in Sources */,
 				082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */,
 				08E447B02BF1947300F1E6F7 /* CommentTableViewCell.swift in Sources */,
 				082BDC2C2BF047F4006D1B58 /* ApiClient.swift in Sources */,
@@ -1082,6 +1106,14 @@
 				minimumVersion = 0.55.0;
 			};
 		};
+		08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1099,6 +1131,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		08E447CE2BF1F99400F1E6F7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
