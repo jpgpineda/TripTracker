@@ -46,7 +46,7 @@ class NewPostViewModel {
                 let response = await self.useCase.createNewPost(parameters: request)
                 self.outPut.showLoader.send(false)
                 switch response {
-                case .success(let message):
+                case .success(_):
                     self.outPut.dismissView.send()
                 case .failure(let apiError):
                     self.outPut.showMessage.send(apiError.customDescription)

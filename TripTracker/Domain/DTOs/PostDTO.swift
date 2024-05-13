@@ -89,6 +89,10 @@ struct CommentDTO {
     let postedOn: Date
     var isLiked: Bool = false
     
+    var formattedLikesSum: String {
+        return String(likesCount)
+    }
+    
     var formattedPostDate: String {
         let calendar = Calendar.current
         return String(format: .Localized.postedOn, calendar.numberOfDaysBetween(postedOn, and: Date()))

@@ -9,7 +9,8 @@ import Swinject
 
 protocol PostDependency {
     var container: Container { get set }
-    func makeCommentsViewController(comments: [CommentDTO]) -> CommentsViewController?
+    func makeCommentsViewController(postId: Int,
+                                    comments: [CommentDTO]) -> CommentsViewController?
     func makeNewPostViewController() -> NewPostViewController?
 }
 
@@ -28,8 +29,10 @@ class PostDependencyImplementation: PostDependency {
         }
     }
     
-    func makeCommentsViewController(comments: [CommentDTO]) -> CommentsViewController? {
+    func makeCommentsViewController(postId: Int,
+                                    comments: [CommentDTO]) -> CommentsViewController? {
         guard let viewController = container.resolve(CommentsViewController.self) else { return nil }
+        viewController.postId = postId
         viewController.comments = comments
         return viewController
     }

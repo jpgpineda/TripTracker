@@ -45,6 +45,9 @@
                         <state key="normal">
                             <imageReference key="image" image="heart" catalog="system" symbolScale="small"/>
                         </state>
+                        <connections>
+                            <action selector="likePost:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ytd-3I-F2r"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuD-Nk-fJb">
                         <rect key="frame" x="16" y="69" width="288" height="14"/>
@@ -61,6 +64,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOR-b0-tQx">
+                        <rect key="frame" x="292.66666666666669" y="28" width="6.6666666666666856" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="CUV-30-He1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1tE-OR-UEM"/>
@@ -75,6 +83,8 @@
                     <constraint firstItem="CUV-30-He1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="X3b-VP-DV4"/>
                     <constraint firstItem="VuX-uL-qEH" firstAttribute="leading" secondItem="51y-1a-xTZ" secondAttribute="trailing" constant="8" id="YHB-QY-xZj"/>
                     <constraint firstAttribute="trailing" secondItem="iuD-Nk-fJb" secondAttribute="trailing" constant="16" id="a0b-ax-Rpe"/>
+                    <constraint firstItem="GOR-b0-tQx" firstAttribute="top" secondItem="VuX-uL-qEH" secondAttribute="bottom" constant="4" id="fis-pS-TJ5"/>
+                    <constraint firstItem="GOR-b0-tQx" firstAttribute="centerX" secondItem="VuX-uL-qEH" secondAttribute="centerX" id="hwF-Lm-jxs"/>
                     <constraint firstItem="VuX-uL-qEH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="oa2-Ng-aE3"/>
                     <constraint firstItem="iuD-Nk-fJb" firstAttribute="top" secondItem="ZCu-zh-SZu" secondAttribute="bottom" constant="8" id="pBK-x9-cdI"/>
                     <constraint firstItem="ZCu-zh-SZu" firstAttribute="top" secondItem="CUV-30-He1" secondAttribute="bottom" id="umt-OU-ShP"/>
@@ -84,11 +94,12 @@
             <connections>
                 <outlet property="descriptionLabel" destination="ZCu-zh-SZu" id="GOa-Gi-8m8"/>
                 <outlet property="likeButton" destination="VuX-uL-qEH" id="DA7-GW-x6l"/>
+                <outlet property="likesSumLabel" destination="GOR-b0-tQx" id="Caf-hK-Pk0"/>
                 <outlet property="postDateLabel" destination="iuD-Nk-fJb" id="ze1-WB-69r"/>
                 <outlet property="userImage" destination="CUV-30-He1" id="gX4-Fz-LGU"/>
                 <outlet property="userNameLabel" destination="51y-1a-xTZ" id="2Ud-ov-HNF"/>
             </connections>
-            <point key="canvasLocation" x="138.93129770992365" y="35.211267605633807"/>
+            <point key="canvasLocation" x="138.93129770992365" y="34.859154929577464"/>
         </tableViewCell>
     </objects>
     <resources>

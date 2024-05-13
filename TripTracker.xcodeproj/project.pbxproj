@@ -75,6 +75,13 @@
 		08E447D12BF2086500F1E6F7 /* CGFloat+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D02BF2086500F1E6F7 /* CGFloat+ext.swift */; };
 		08E447D32BF2088000F1E6F7 /* Double+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D22BF2088000F1E6F7 /* Double+ext.swift */; };
 		08E447D82BF20DF800F1E6F7 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D72BF20DF800F1E6F7 /* Date+Ext.swift */; };
+		08E447DA2BF211C100F1E6F7 /* AddNewCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447D92BF211C100F1E6F7 /* AddNewCommentRequest.swift */; };
+		08E447DC2BF213D200F1E6F7 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447DB2BF213D200F1E6F7 /* CommentsViewModel.swift */; };
+		08E447DE2BF2162300F1E6F7 /* CommentsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447DD2BF2162300F1E6F7 /* CommentsConfigurator.swift */; };
+		08E447E12BF218B900F1E6F7 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08E447E02BF218B900F1E6F7 /* IQKeyboardManagerSwift */; };
+		08E447E32BF21AEA00F1E6F7 /* AddLikeToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E22BF21AEA00F1E6F7 /* AddLikeToComment.swift */; };
+		08E447E52BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E42BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift */; };
+		08E447E72BF21C7900F1E6F7 /* CommentIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +170,12 @@
 		08E447D02BF2086500F1E6F7 /* CGFloat+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+ext.swift"; sourceTree = "<group>"; };
 		08E447D22BF2088000F1E6F7 /* Double+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ext.swift"; sourceTree = "<group>"; };
 		08E447D72BF20DF800F1E6F7 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		08E447D92BF211C100F1E6F7 /* AddNewCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCommentRequest.swift; sourceTree = "<group>"; };
+		08E447DB2BF213D200F1E6F7 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		08E447DD2BF2162300F1E6F7 /* CommentsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsConfigurator.swift; sourceTree = "<group>"; };
+		08E447E22BF21AEA00F1E6F7 /* AddLikeToComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeToComment.swift; sourceTree = "<group>"; };
+		08E447E42BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeToCommentRequest.swift; sourceTree = "<group>"; };
+		08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentIdentity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E447E12BF218B900F1E6F7 /* IQKeyboardManagerSwift in Frameworks */,
 				082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */,
 				082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */,
 				08E447CF2BF1F99400F1E6F7 /* SDWebImage in Frameworks */,
@@ -209,6 +223,8 @@
 				0817E7D62BF125AA007AA78E /* MakePost.swift */,
 				0817E7D82BF1287E007AA78E /* MakeComment.swift */,
 				08E447BF2BF1AA8700F1E6F7 /* MakePostResponse.swift */,
+				08E447E22BF21AEA00F1E6F7 /* AddLikeToComment.swift */,
+				08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -252,6 +268,8 @@
 			children = (
 				0817E7DE2BF13F3B007AA78E /* FetchPostsRequest.swift */,
 				08E447BB2BF1A2D500F1E6F7 /* AddNewPostRequest.swift */,
+				08E447D92BF211C100F1E6F7 /* AddNewCommentRequest.swift */,
+				08E447E42BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -498,7 +516,9 @@
 		08E447A42BF1911A00F1E6F7 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				08E447DD2BF2162300F1E6F7 /* CommentsConfigurator.swift */,
 				08E447A52BF1912A00F1E6F7 /* CommentsViewController.swift */,
+				08E447DB2BF213D200F1E6F7 /* CommentsViewModel.swift */,
 				08E447A62BF1912A00F1E6F7 /* CommentsViewController.xib */,
 			);
 			path = Comments;
@@ -545,6 +565,7 @@
 				082BDC142BF03F29006D1B58 /* Swinject */,
 				082BDC172BF03F46006D1B58 /* RealmSwift */,
 				08E447CE2BF1F99400F1E6F7 /* SDWebImage */,
+				08E447E02BF218B900F1E6F7 /* IQKeyboardManagerSwift */,
 			);
 			productName = TripTracker;
 			productReference = 082BDBBE2BF03D10006D1B58 /* TripTracker.app */;
@@ -624,6 +645,7 @@
 				082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				08E447DF2BF218B900F1E6F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 082BDBBF2BF03D10006D1B58 /* Products */;
 			projectDirPath = "";
@@ -689,6 +711,7 @@
 				08E447BA2BF19F1200F1E6F7 /* PostDependency.swift in Sources */,
 				08E447C42BF1B15600F1E6F7 /* NewPostConfigurator.swift in Sources */,
 				08E447A12BF156DD00F1E6F7 /* Calendar+ext.swift in Sources */,
+				08E447DA2BF211C100F1E6F7 /* AddNewCommentRequest.swift in Sources */,
 				082BDC262BF04771006D1B58 /* ApiError.swift in Sources */,
 				08E447C02BF1AA8700F1E6F7 /* MakePostResponse.swift in Sources */,
 				08E447AC2BF1938700F1E6F7 /* UITextField+ext.swift in Sources */,
@@ -704,15 +727,20 @@
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
 				08E447D12BF2086500F1E6F7 /* CGFloat+ext.swift in Sources */,
 				08E447C22BF1B09300F1E6F7 /* UIImage+ext.swift in Sources */,
+				08E447E72BF21C7900F1E6F7 /* CommentIdentity.swift in Sources */,
 				082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */,
 				082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */,
 				08E447C82BF1C21A00F1E6F7 /* UITextView+ext.swift in Sources */,
 				082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */,
+				08E447E32BF21AEA00F1E6F7 /* AddLikeToComment.swift in Sources */,
+				08E447DE2BF2162300F1E6F7 /* CommentsConfigurator.swift in Sources */,
 				0817E7CF2BF11E48007AA78E /* PostModel.swift in Sources */,
 				0817E7DC2BF13EEE007AA78E /* PostApiGateway.swift in Sources */,
 				0817E7D12BF11E81007AA78E /* String+ext.swift in Sources */,
+				08E447DC2BF213D200F1E6F7 /* CommentsViewModel.swift in Sources */,
 				08E4479F2BF1531C00F1E6F7 /* UITableView+ext.swift in Sources */,
 				08E447A32BF1574400F1E6F7 /* Int+ext.swift in Sources */,
+				08E447E52BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift in Sources */,
 				0817E7D52BF122E2007AA78E /* PostDTO.swift in Sources */,
 				08E4479D2BF151F900F1E6F7 /* FavoritesViewController.swift in Sources */,
 				082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */,
@@ -1114,6 +1142,14 @@
 				minimumVersion = 5.19.2;
 			};
 		};
+		08E447DF2BF218B900F1E6F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1136,6 +1172,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		08E447E02BF218B900F1E6F7 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E447DF2BF218B900F1E6F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

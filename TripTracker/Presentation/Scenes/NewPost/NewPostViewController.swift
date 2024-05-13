@@ -22,9 +22,9 @@ class NewPostViewController: UIViewController {
     // MARK: Properties
     ///////////////////////////////////////
     let imagePicker = UIImagePickerController()
-    let configurator = NewPostConfiguratorImplementation()
-    var viewModel: NewPostViewModel?
-    var cancelBag = Set<AnyCancellable>()
+    private let configurator = NewPostConfiguratorImplementation()
+    private var viewModel: NewPostViewModel?
+    private var cancelBag = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()

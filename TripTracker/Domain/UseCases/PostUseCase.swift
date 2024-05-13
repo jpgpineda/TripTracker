@@ -14,6 +14,8 @@ protocol PostUseCase {
     func savePost(post: FavoritePostModel, completion: @escaping ModelOperationCompletionHandler)
     func getFavoritesPosts() -> [PostDTO]?
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
+    func addNewComment(parameters: AddNewCommentRequest) async -> ApiResult<String>
+    func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String>
 }
 
 class PostUseCaseImplementation: PostUseCase {
@@ -57,5 +59,13 @@ class PostUseCaseImplementation: PostUseCase {
     
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String> {
         return await apiGateway.createNewPost(parameters: parameters)
+    }
+    
+    func addNewComment(parameters: AddNewCommentRequest) async -> ApiResult<String> {
+        return await apiGateway.addComment(parameters: parameters)
+    }
+    
+    func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String> {
+        return await apiGateway.addLikeToComment(parameters: parameters)
     }
 }
