@@ -1,15 +1,20 @@
 {
   "configurations" : [
     {
-      "id" : "8AFC075B-40AA-4939-8680-6F7CFA50D05E",
-      "name" : "Configuration 1",
+      "id" : "04FB47F9-415B-4E4A-BAAB-5D8657C4E9D2",
+      "name" : "Test Scheme Action",
       "options" : {
 
       }
     }
   ],
   "defaultOptions" : {
-    "testTimeoutsEnabled" : true
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TripTracker.xcodeproj",
+      "identifier" : "082BDBBD2BF03D10006D1B58",
+      "name" : "TripTracker"
+    }
   },
   "testTargets" : [
     {
