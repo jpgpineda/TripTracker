@@ -23,9 +23,6 @@
 		082BDBC92BF03D10006D1B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082BDBC72BF03D10006D1B58 /* Main.storyboard */; };
 		082BDBCB2BF03D11006D1B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082BDBCA2BF03D11006D1B58 /* Assets.xcassets */; };
 		082BDBCE2BF03D11006D1B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082BDBCC2BF03D11006D1B58 /* LaunchScreen.storyboard */; };
-		082BDBD92BF03D11006D1B58 /* TripTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDBD82BF03D11006D1B58 /* TripTrackerTests.swift */; };
-		082BDBE32BF03D11006D1B58 /* TripTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDBE22BF03D11006D1B58 /* TripTrackerUITests.swift */; };
-		082BDBE52BF03D11006D1B58 /* TripTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDBE42BF03D11006D1B58 /* TripTrackerUITestsLaunchTests.swift */; };
 		082BDBF42BF03DCE006D1B58 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 082BDBF32BF03DCE006D1B58 /* Localizable.strings */; };
 		082BDBF72BF03DDC006D1B58 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 082BDBF62BF03DDC006D1B58 /* loader.json */; };
 		082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDBFB2BF03DF4006D1B58 /* Constants.swift */; };
@@ -35,7 +32,6 @@
 		082BDC0D2BF03E49006D1B58 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC0C2BF03E49006D1B58 /* PostsViewController.swift */; };
 		082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC112BF03F1E006D1B58 /* Lottie */; };
 		082BDC152BF03F29006D1B58 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC142BF03F29006D1B58 /* Swinject */; };
-		082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 082BDC172BF03F46006D1B58 /* RealmSwift */; };
 		082BDC202BF0458C006D1B58 /* ModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC1F2BF0458C006D1B58 /* ModuleManager.swift */; };
 		082BDC222BF045A3006D1B58 /* ToolsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC212BF045A3006D1B58 /* ToolsDependency.swift */; };
 		082BDC262BF04771006D1B58 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082BDC252BF04771006D1B58 /* ApiError.swift */; };
@@ -84,17 +80,14 @@
 		08E447E72BF21C7900F1E6F7 /* CommentIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */; };
 		08E447E92BF21FD000F1E6F7 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */; };
 		08E447EB2BF223C600F1E6F7 /* FavoritesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */; };
+		08E448072BF23AD900F1E6F7 /* TripTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E448062BF23AD900F1E6F7 /* TripTrackerTests.swift */; };
+		08E448162BF23F3C00F1E6F7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08E448152BF23F3C00F1E6F7 /* RealmSwift */; };
+		08E448182BF23F5C00F1E6F7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08E448172BF23F5C00F1E6F7 /* RealmSwift */; };
+		08E4481A2BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E448192BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		082BDBD52BF03D11006D1B58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 082BDBB62BF03D10006D1B58 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 082BDBBD2BF03D10006D1B58;
-			remoteInfo = TripTracker;
-		};
-		082BDBDF2BF03D11006D1B58 /* PBXContainerItemProxy */ = {
+		08E448082BF23AD900F1E6F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 082BDBB62BF03D10006D1B58 /* Project object */;
 			proxyType = 1;
@@ -102,6 +95,19 @@
 			remoteInfo = TripTracker;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08E448132BF23DCD00F1E6F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0817E7C82BF05B6A007AA78E /* StorageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageContext.swift; sourceTree = "<group>"; };
@@ -122,11 +128,6 @@
 		082BDBCA2BF03D11006D1B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		082BDBCD2BF03D11006D1B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082BDBCF2BF03D11006D1B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		082BDBD42BF03D11006D1B58 /* TripTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		082BDBD82BF03D11006D1B58 /* TripTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerTests.swift; sourceTree = "<group>"; };
-		082BDBDE2BF03D11006D1B58 /* TripTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		082BDBE22BF03D11006D1B58 /* TripTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerUITests.swift; sourceTree = "<group>"; };
-		082BDBE42BF03D11006D1B58 /* TripTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		082BDBF32BF03DCE006D1B58 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		082BDBF62BF03DDC006D1B58 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		082BDBFB2BF03DF4006D1B58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -180,6 +181,10 @@
 		08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentIdentity.swift; sourceTree = "<group>"; };
 		08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesConfigurator.swift; sourceTree = "<group>"; };
+		08E448042BF23AD900F1E6F7 /* TripTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E448062BF23AD900F1E6F7 /* TripTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerTests.swift; sourceTree = "<group>"; };
+		08E4480F2BF23B9700F1E6F7 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		08E448192BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerBaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,24 +193,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E447E12BF218B900F1E6F7 /* IQKeyboardManagerSwift in Frameworks */,
-				082BDC182BF03F46006D1B58 /* RealmSwift in Frameworks */,
 				082BDC122BF03F1E006D1B58 /* Lottie in Frameworks */,
 				08E447CF2BF1F99400F1E6F7 /* SDWebImage in Frameworks */,
+				08E448182BF23F5C00F1E6F7 /* RealmSwift in Frameworks */,
 				082BDC152BF03F29006D1B58 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		082BDBD12BF03D11006D1B58 /* Frameworks */ = {
+		08E448012BF23AD900F1E6F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082BDBDB2BF03D11006D1B58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				08E448162BF23F3C00F1E6F7 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +288,9 @@
 		082BDBB52BF03D10006D1B58 = {
 			isa = PBXGroup;
 			children = (
+				08E4480F2BF23B9700F1E6F7 /* TestPlan.xctestplan */,
 				082BDBC02BF03D10006D1B58 /* TripTracker */,
-				082BDBD72BF03D11006D1B58 /* TripTrackerTests */,
-				082BDBE12BF03D11006D1B58 /* TripTrackerUITests */,
+				08E448052BF23AD900F1E6F7 /* TripTrackerTests */,
 				082BDBBF2BF03D10006D1B58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -300,8 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				082BDBBE2BF03D10006D1B58 /* TripTracker.app */,
-				082BDBD42BF03D11006D1B58 /* TripTrackerTests.xctest */,
-				082BDBDE2BF03D11006D1B58 /* TripTrackerUITests.xctest */,
+				08E448042BF23AD900F1E6F7 /* TripTrackerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,23 +318,6 @@
 				082BDC032BF03E19006D1B58 /* Presentation */,
 			);
 			path = TripTracker;
-			sourceTree = "<group>";
-		};
-		082BDBD72BF03D11006D1B58 /* TripTrackerTests */ = {
-			isa = PBXGroup;
-			children = (
-				082BDBD82BF03D11006D1B58 /* TripTrackerTests.swift */,
-			);
-			path = TripTrackerTests;
-			sourceTree = "<group>";
-		};
-		082BDBE12BF03D11006D1B58 /* TripTrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				082BDBE22BF03D11006D1B58 /* TripTrackerUITests.swift */,
-				082BDBE42BF03D11006D1B58 /* TripTrackerUITestsLaunchTests.swift */,
-			);
-			path = TripTrackerUITests;
 			sourceTree = "<group>";
 		};
 		082BDBF12BF03DB8006D1B58 /* Assets */ = {
@@ -550,6 +531,15 @@
 			path = NewPost;
 			sourceTree = "<group>";
 		};
+		08E448052BF23AD900F1E6F7 /* TripTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				08E448062BF23AD900F1E6F7 /* TripTrackerTests.swift */,
+				08E448192BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift */,
+			);
+			path = TripTrackerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -560,6 +550,7 @@
 				082BDBBA2BF03D10006D1B58 /* Sources */,
 				082BDBBB2BF03D10006D1B58 /* Frameworks */,
 				082BDBBC2BF03D10006D1B58 /* Resources */,
+				08E448132BF23DCD00F1E6F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -569,49 +560,34 @@
 			packageProductDependencies = (
 				082BDC112BF03F1E006D1B58 /* Lottie */,
 				082BDC142BF03F29006D1B58 /* Swinject */,
-				082BDC172BF03F46006D1B58 /* RealmSwift */,
 				08E447CE2BF1F99400F1E6F7 /* SDWebImage */,
 				08E447E02BF218B900F1E6F7 /* IQKeyboardManagerSwift */,
+				08E448172BF23F5C00F1E6F7 /* RealmSwift */,
 			);
 			productName = TripTracker;
 			productReference = 082BDBBE2BF03D10006D1B58 /* TripTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		082BDBD32BF03D11006D1B58 /* TripTrackerTests */ = {
+		08E448032BF23AD900F1E6F7 /* TripTrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 082BDBEB2BF03D11006D1B58 /* Build configuration list for PBXNativeTarget "TripTrackerTests" */;
+			buildConfigurationList = 08E4480A2BF23AD900F1E6F7 /* Build configuration list for PBXNativeTarget "TripTrackerTests" */;
 			buildPhases = (
-				082BDBD02BF03D11006D1B58 /* Sources */,
-				082BDBD12BF03D11006D1B58 /* Frameworks */,
-				082BDBD22BF03D11006D1B58 /* Resources */,
+				08E448002BF23AD900F1E6F7 /* Sources */,
+				08E448012BF23AD900F1E6F7 /* Frameworks */,
+				08E448022BF23AD900F1E6F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				082BDBD62BF03D11006D1B58 /* PBXTargetDependency */,
+				08E448092BF23AD900F1E6F7 /* PBXTargetDependency */,
 			);
 			name = TripTrackerTests;
+			packageProductDependencies = (
+				08E448152BF23F3C00F1E6F7 /* RealmSwift */,
+			);
 			productName = TripTrackerTests;
-			productReference = 082BDBD42BF03D11006D1B58 /* TripTrackerTests.xctest */;
+			productReference = 08E448042BF23AD900F1E6F7 /* TripTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		082BDBDD2BF03D11006D1B58 /* TripTrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 082BDBEE2BF03D11006D1B58 /* Build configuration list for PBXNativeTarget "TripTrackerUITests" */;
-			buildPhases = (
-				082BDBDA2BF03D11006D1B58 /* Sources */,
-				082BDBDB2BF03D11006D1B58 /* Frameworks */,
-				082BDBDC2BF03D11006D1B58 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				082BDBE02BF03D11006D1B58 /* PBXTargetDependency */,
-			);
-			name = TripTrackerUITests;
-			productName = TripTrackerUITests;
-			productReference = 082BDBDE2BF03D11006D1B58 /* TripTrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -626,11 +602,7 @@
 					082BDBBD2BF03D10006D1B58 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					082BDBD32BF03D11006D1B58 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 082BDBBD2BF03D10006D1B58;
-					};
-					082BDBDD2BF03D11006D1B58 = {
+					08E448032BF23AD900F1E6F7 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 082BDBBD2BF03D10006D1B58;
 					};
@@ -648,18 +620,17 @@
 			packageReferences = (
 				082BDC102BF03F1E006D1B58 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */,
-				082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				08E447DF2BF218B900F1E6F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				08E448142BF23E7F00F1E6F7 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 082BDBBF2BF03D10006D1B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				082BDBBD2BF03D10006D1B58 /* TripTracker */,
-				082BDBD32BF03D11006D1B58 /* TripTrackerTests */,
-				082BDBDD2BF03D11006D1B58 /* TripTrackerUITests */,
+				08E448032BF23AD900F1E6F7 /* TripTrackerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -683,14 +654,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		082BDBD22BF03D11006D1B58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082BDBDC2BF03D11006D1B58 /* Resources */ = {
+		08E448022BF23AD900F1E6F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -765,35 +729,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		082BDBD02BF03D11006D1B58 /* Sources */ = {
+		08E448002BF23AD900F1E6F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082BDBD92BF03D11006D1B58 /* TripTrackerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		082BDBDA2BF03D11006D1B58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				082BDBE52BF03D11006D1B58 /* TripTrackerUITestsLaunchTests.swift in Sources */,
-				082BDBE32BF03D11006D1B58 /* TripTrackerUITests.swift in Sources */,
+				08E4481A2BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift in Sources */,
+				08E448072BF23AD900F1E6F7 /* TripTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		082BDBD62BF03D11006D1B58 /* PBXTargetDependency */ = {
+		08E448092BF23AD900F1E6F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 082BDBBD2BF03D10006D1B58 /* TripTracker */;
-			targetProxy = 082BDBD52BF03D11006D1B58 /* PBXContainerItemProxy */;
-		};
-		082BDBE02BF03D11006D1B58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 082BDBBD2BF03D10006D1B58 /* TripTracker */;
-			targetProxy = 082BDBDF2BF03D11006D1B58 /* PBXContainerItemProxy */;
+			targetProxy = 08E448082BF23AD900F1E6F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -992,16 +943,14 @@
 			};
 			name = Release;
 		};
-		082BDBEC2BF03D11006D1B58 /* Debug */ = {
+		08E4480B2BF23AD900F1E6F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JDT5SYQKPJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.challengue.TripTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1012,16 +961,14 @@
 			};
 			name = Debug;
 		};
-		082BDBED2BF03D11006D1B58 /* Release */ = {
+		08E4480C2BF23AD900F1E6F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JDT5SYQKPJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.challengue.TripTrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1029,42 +976,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TripTracker";
-			};
-			name = Release;
-		};
-		082BDBEF2BF03D11006D1B58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JDT5SYQKPJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.challengue.TripTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TripTracker;
-			};
-			name = Debug;
-		};
-		082BDBF02BF03D11006D1B58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JDT5SYQKPJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.challengue.TripTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TripTracker;
 			};
 			name = Release;
 		};
@@ -1089,20 +1000,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		082BDBEB2BF03D11006D1B58 /* Build configuration list for PBXNativeTarget "TripTrackerTests" */ = {
+		08E4480A2BF23AD900F1E6F7 /* Build configuration list for PBXNativeTarget "TripTrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				082BDBEC2BF03D11006D1B58 /* Debug */,
-				082BDBED2BF03D11006D1B58 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		082BDBEE2BF03D11006D1B58 /* Build configuration list for PBXNativeTarget "TripTrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				082BDBEF2BF03D11006D1B58 /* Debug */,
-				082BDBF02BF03D11006D1B58 /* Release */,
+				08E4480B2BF23AD900F1E6F7 /* Debug */,
+				08E4480C2BF23AD900F1E6F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1124,14 +1026,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.8.8;
-			};
-		};
-		082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.50.0;
 			};
 		};
 		082BDC192BF03F5D006D1B58 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
@@ -1158,6 +1052,14 @@
 				minimumVersion = 7.0.3;
 			};
 		};
+		08E448142BF23E7F00F1E6F7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.50.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1171,11 +1073,6 @@
 			package = 082BDC132BF03F29006D1B58 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
-		082BDC172BF03F46006D1B58 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 082BDC162BF03F46006D1B58 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		08E447CE2BF1F99400F1E6F7 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 08E447CD2BF1F99400F1E6F7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
@@ -1185,6 +1082,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 08E447DF2BF218B900F1E6F7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		08E448152BF23F3C00F1E6F7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E448142BF23E7F00F1E6F7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		08E448172BF23F5C00F1E6F7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E448142BF23E7F00F1E6F7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

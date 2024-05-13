@@ -2,35 +2,76 @@
 //  TripTrackerTests.swift
 //  TripTrackerTests
 //
-//  Created by javier pineda on 11/05/24.
+//  Created by javier pineda on 13/05/24.
 //
 
 import XCTest
 @testable import TripTracker
 
-final class TripTrackerTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+final class TripTrackerTests: TripTrackerBaseTest {
+    
+    func testPostResponseNotEmpty() async {
+        // Arrange
+        let apiGateway = PostApiGatewayImplementation(apiClient: apiClient,
+                                                      storageContext: storageContext)
+        
+        let useCase = PostUseCaseImplementation(apiGateway: apiGateway)
+        
+        // ACt
+        let result = await useCase.fetchPosts(parameters: FetchPostsRequest())
+        
+        // Assert
+        switch result {
+        case .success(let posts):
+            XCTAssertFalse(posts.isEmpty)
+        case .failure(let apiError):
+            XCTFail("The test has failed: \(apiError.customDescription)")
         }
     }
-
+    
+    func testPostActionsNotEmpty() async {
+        // Arrange
+        let apiGateway = PostApiGatewayImplementation(apiClient: apiClient,
+                                                      storageContext: storageContext)
+        
+        let useCase = PostUseCaseImplementation(apiGateway: apiGateway)
+        
+        // Act
+        let result = await useCase.fetchPosts(parameters: FetchPostsRequest())
+        
+        // Assert
+        switch result {
+        case .success(let posts):
+            guard let post = posts.first else {
+                XCTFail("The test has failed due to empty data")
+                return
+            }
+            XCTAssertFalse(post.actions.isEmpty)
+        case .failure(let apiError):
+            XCTFail("The test has failed: \(apiError.customDescription)")
+        }
+    }
+    
+    func testCommentsNotEmpty() async {
+        // Arrange
+        let apiGateway = PostApiGatewayImplementation(apiClient: apiClient,
+                                                      storageContext: storageContext)
+        
+        let useCase = PostUseCaseImplementation(apiGateway: apiGateway)
+        
+        // Act
+        let result = await useCase.fetchPosts(parameters: FetchPostsRequest())
+        
+        // Assert
+        switch result {
+        case .success(let posts):
+            guard let post = posts.first else {
+                XCTFail("The test has failed due to empty data")
+                return
+            }
+            XCTAssertFalse(post.commets.isEmpty)
+        case .failure(let apiError):
+            XCTFail("The test has failed: \(apiError.customDescription)")
+        }
+    }
 }
