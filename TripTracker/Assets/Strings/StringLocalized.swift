@@ -26,6 +26,8 @@ extension String {
         // MARK: Posts
         static var comments: String { return getLocalizedString(#function) }
         static var postedOn: String { return getLocalizedString(#function) }
+        static var commentsTitle: String { return getLocalizedString(#function) }
+        static var addCommentHint: String { return getLocalizedString(#function) }
         
         internal static func getLocalizedString(_ key: String) -> String {
             return NSLocalizedString(key, comment: key)

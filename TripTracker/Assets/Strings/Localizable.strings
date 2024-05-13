@@ -23,4 +23,6 @@
 // MARK: Posts
 "comments"                  = "See the @d comments";
 "postedOn"                  = "%d days ago";
+"commentsTitle"             = "Comments";
+"addCommentHint"            = "Add comment";
 
