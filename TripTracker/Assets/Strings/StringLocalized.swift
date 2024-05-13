@@ -33,6 +33,13 @@ extension String {
         static var postDescriptionHint: String { return getLocalizedString(#function) }
         static var newPostConfirmation: String { return getLocalizedString(#function) }
         static var share: String { return getLocalizedString(#function) }
+        static var gallery: String { return getLocalizedString(#function) }
+        static var camera: String { return getLocalizedString(#function) }
+        static var cancel: String { return getLocalizedString(#function) }
+        
+        // MARK: Tools
+        static var atenttion: String { return getLocalizedString(#function) }
+        static var confirm: String { return getLocalizedString(#function) }
         
         internal static func getLocalizedString(_ key: String) -> String {
             return NSLocalizedString(key, comment: key)

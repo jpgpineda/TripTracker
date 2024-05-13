@@ -62,6 +62,13 @@
 		08E447B62BF19A5D00F1E6F7 /* NewPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E447B42BF19A5D00F1E6F7 /* NewPostViewController.xib */; };
 		08E447B82BF19CA100F1E6F7 /* UIButton+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447B72BF19CA100F1E6F7 /* UIButton+ext.swift */; };
 		08E447BA2BF19F1200F1E6F7 /* PostDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447B92BF19F1100F1E6F7 /* PostDependency.swift */; };
+		08E447BC2BF1A2D500F1E6F7 /* AddNewPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447BB2BF1A2D500F1E6F7 /* AddNewPostRequest.swift */; };
+		08E447BE2BF1A50E00F1E6F7 /* NewPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447BD2BF1A50E00F1E6F7 /* NewPostViewModel.swift */; };
+		08E447C02BF1AA8700F1E6F7 /* MakePostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447BF2BF1AA8700F1E6F7 /* MakePostResponse.swift */; };
+		08E447C22BF1B09300F1E6F7 /* UIImage+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C12BF1B09300F1E6F7 /* UIImage+ext.swift */; };
+		08E447C42BF1B15600F1E6F7 /* NewPostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C32BF1B15600F1E6F7 /* NewPostConfigurator.swift */; };
+		08E447C62BF1C1ED00F1E6F7 /* UIVIew+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */; };
+		08E447C82BF1C21A00F1E6F7 /* UITextView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +145,13 @@
 		08E447B42BF19A5D00F1E6F7 /* NewPostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPostViewController.xib; sourceTree = "<group>"; };
 		08E447B72BF19CA100F1E6F7 /* UIButton+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ext.swift"; sourceTree = "<group>"; };
 		08E447B92BF19F1100F1E6F7 /* PostDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDependency.swift; sourceTree = "<group>"; };
+		08E447BB2BF1A2D500F1E6F7 /* AddNewPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPostRequest.swift; sourceTree = "<group>"; };
+		08E447BD2BF1A50E00F1E6F7 /* NewPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewModel.swift; sourceTree = "<group>"; };
+		08E447BF2BF1AA8700F1E6F7 /* MakePostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePostResponse.swift; sourceTree = "<group>"; };
+		08E447C12BF1B09300F1E6F7 /* UIImage+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ext.swift"; sourceTree = "<group>"; };
+		08E447C32BF1B15600F1E6F7 /* NewPostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostConfigurator.swift; sourceTree = "<group>"; };
+		08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+ext.swift"; sourceTree = "<group>"; };
+		08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +196,7 @@
 				0817E7CB2BF11DB2007AA78E /* Post.swift */,
 				0817E7D62BF125AA007AA78E /* MakePost.swift */,
 				0817E7D82BF1287E007AA78E /* MakeComment.swift */,
+				08E447BF2BF1AA8700F1E6F7 /* MakePostResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -224,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				0817E7DE2BF13F3B007AA78E /* FetchPostsRequest.swift */,
+				08E447BB2BF1A2D500F1E6F7 /* AddNewPostRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -354,6 +370,9 @@
 				08E447A92BF191D400F1E6F7 /* UILabel+ext.swift */,
 				08E447AB2BF1938700F1E6F7 /* UITextField+ext.swift */,
 				08E447B72BF19CA100F1E6F7 /* UIButton+ext.swift */,
+				08E447C12BF1B09300F1E6F7 /* UIImage+ext.swift */,
+				08E447C52BF1C1ED00F1E6F7 /* UIVIew+ext.swift */,
+				08E447C72BF1C21A00F1E6F7 /* UITextView+ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -480,7 +499,9 @@
 		08E447B22BF19A4B00F1E6F7 /* NewPost */ = {
 			isa = PBXGroup;
 			children = (
+				08E447C32BF1B15600F1E6F7 /* NewPostConfigurator.swift */,
 				08E447B32BF19A5D00F1E6F7 /* NewPostViewController.swift */,
+				08E447BD2BF1A50E00F1E6F7 /* NewPostViewModel.swift */,
 				08E447B42BF19A5D00F1E6F7 /* NewPostViewController.xib */,
 			);
 			path = NewPost;
@@ -645,18 +666,24 @@
 				082BDC2E2BF0480C006D1B58 /* ApiRequestProtocol.swift in Sources */,
 				082BDBC42BF03D10006D1B58 /* SceneDelegate.swift in Sources */,
 				08E447BA2BF19F1200F1E6F7 /* PostDependency.swift in Sources */,
+				08E447C42BF1B15600F1E6F7 /* NewPostConfigurator.swift in Sources */,
 				08E447A12BF156DD00F1E6F7 /* Calendar+ext.swift in Sources */,
 				082BDC262BF04771006D1B58 /* ApiError.swift in Sources */,
+				08E447C02BF1AA8700F1E6F7 /* MakePostResponse.swift in Sources */,
 				08E447AC2BF1938700F1E6F7 /* UITextField+ext.swift in Sources */,
 				0817E7E12BF1456E007AA78E /* FavoritePostModel.swift in Sources */,
+				08E447BE2BF1A50E00F1E6F7 /* NewPostViewModel.swift in Sources */,
 				0817E7D92BF1287E007AA78E /* MakeComment.swift in Sources */,
 				082BDC282BF047A7006D1B58 /* StringLocalized.swift in Sources */,
 				0817E7C92BF05B6A007AA78E /* StorageContext.swift in Sources */,
 				0817E7D72BF125AA007AA78E /* MakePost.swift in Sources */,
+				08E447C62BF1C1ED00F1E6F7 /* UIVIew+ext.swift in Sources */,
 				082BDC082BF03E35006D1B58 /* LoaderViewController.swift in Sources */,
 				082BDC022BF03E14006D1B58 /* UIVIewController+Ext.swift in Sources */,
+				08E447C22BF1B09300F1E6F7 /* UIImage+ext.swift in Sources */,
 				082BDC2A2BF047DB006D1B58 /* ApiResponseProtocol.swift in Sources */,
 				082BDC362BF04AD6006D1B58 /* PostTableViewCell.swift in Sources */,
+				08E447C82BF1C21A00F1E6F7 /* UITextView+ext.swift in Sources */,
 				082BDC302BF04826006D1B58 /* RequestManager.swift in Sources */,
 				0817E7CF2BF11E48007AA78E /* PostModel.swift in Sources */,
 				0817E7DC2BF13EEE007AA78E /* PostApiGateway.swift in Sources */,
@@ -667,6 +694,7 @@
 				08E4479D2BF151F900F1E6F7 /* FavoritesViewController.swift in Sources */,
 				082BDC322BF0484F006D1B58 /* ApiResult.swift in Sources */,
 				0817E7CC2BF11DB2007AA78E /* Post.swift in Sources */,
+				08E447BC2BF1A2D500F1E6F7 /* AddNewPostRequest.swift in Sources */,
 				08E447AA2BF191D400F1E6F7 /* UILabel+ext.swift in Sources */,
 				08E447A72BF1912A00F1E6F7 /* CommentsViewController.swift in Sources */,
 				082BDBFC2BF03DF4006D1B58 /* Constants.swift in Sources */,

@@ -32,7 +32,7 @@ struct PostDTO {
         description = model.postDescription
         image = model.image
         likesCount = model.likesCount
-        user = UserDTO(with: model.userPost)
+        user = UserDTO(with: model.userPost ?? UserModel())
         actions = Array(model.actions.map({
             return $0.name
         }))
@@ -47,7 +47,7 @@ struct PostDTO {
         description = favoritePostModel.postDescription
         image = favoritePostModel.image
         likesCount = favoritePostModel.likesCount
-        user = UserDTO(with: favoritePostModel.userPost)
+        user = UserDTO(with: favoritePostModel.userPost ?? UserModel())
         actions = Array(favoritePostModel.actions.map({
             return $0.name
         }))
@@ -90,7 +90,7 @@ struct CommentDTO {
         id = model.id
         description = model.commentDescription
         likesCount = model.likesCount
-        user = UserDTO(with: model.user)
+        user = UserDTO(with: model.user ?? UserModel())
         postedOn = model.postedOn
     }
     
@@ -118,5 +118,11 @@ struct UserDTO {
         id = entity.id
         userName = entity.userName
         userImageURL = entity.userImageURL
+    }
+    
+    init() {
+        self.id = .zero
+        self.userName = .empty
+        self.userImageURL = .empty
     }
 }

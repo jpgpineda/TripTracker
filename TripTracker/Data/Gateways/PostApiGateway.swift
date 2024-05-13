@@ -14,6 +14,7 @@ protocol PostApiGateway {
     func getPosts() -> [PostModel]?
     func savePost(post: FavoritePostModel, completion: @escaping ModelOperationCompletionHandler)
     func getFavoritesPosts() -> [FavoritePostModel]?
+    func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
 }
 
 class PostApiGatewayImplementation: PostApiGateway {
@@ -53,5 +54,15 @@ class PostApiGatewayImplementation: PostApiGateway {
     
     func getPosts() -> [PostModel]? {
         return storageContext.getModel(model: PostModel.self, predicate: nil) as? [PostModel]
+    }
+    
+    func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String> {
+        guard let apiRequest = parameters.apiRequest else { return .failure(ApiError.unknown) }
+        do {
+            let response = try await apiClient.fetch(type: MakePostResponse.self, with: apiRequest)
+            return .success(response.message)
+        } catch {
+            return .failure(ApiError.requestFailed(description: error.localizedDescription))
+        }
     }
 }
