@@ -25,4 +25,8 @@
 "postedOn"                  = "%d days ago";
 "commentsTitle"             = "Comments";
 "addCommentHint"            = "Add comment";
-
+"newPost"                   = "New Post";
+"selectPicture"             = "Select picture";
+"postDescriptionHint"       = "Describe your picture";
+"newPostConfirmation"       = "Your post has been created successfully";
+"share"                     = "Share";

@@ -9,6 +9,7 @@ import Swinject
 
 class ModuleManager {
     let toolsDependency: ToolsDependency
+    let postDependency: PostDependency
     
     static var shared: ModuleManager = {
         return ModuleManager(container: Container())
@@ -16,5 +17,6 @@ class ModuleManager {
     
     private init(container: Container) {
         self.toolsDependency = ToolsDependencyImplementation(container: container)
+        self.postDependency = PostDependencyImplementation(container: container)
     }
 }
