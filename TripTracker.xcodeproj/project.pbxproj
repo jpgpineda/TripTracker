@@ -148,6 +148,7 @@
 		082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		082BDC382BF04BAA006D1B58 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		08C94B8E2BF24E0600C9EEDF /* TripTracker.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripTracker.xctestplan; sourceTree = "<group>"; };
+		08C94B8F2BF2509E00C9EEDF /* TripTracker.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripTracker.xctestplan; sourceTree = "<group>"; };
 		08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ext.swift"; sourceTree = "<group>"; };
 		08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ext.swift"; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 		082BDBB52BF03D10006D1B58 = {
 			isa = PBXGroup;
 			children = (
+				08C94B8F2BF2509E00C9EEDF /* TripTracker.xctestplan */,
 				08C94B8E2BF24E0600C9EEDF /* TripTracker.xctestplan */,
 				082BDBC02BF03D10006D1B58 /* TripTracker */,
 				08E448052BF23AD900F1E6F7 /* TripTrackerTests */,
