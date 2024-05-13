@@ -13,6 +13,7 @@ struct HttpCodes {
 
 struct HTTPMethod {
     static let GET = "GET"
+    static let POST = "POST"
 }
 
 struct Host {

@@ -13,6 +13,7 @@ protocol PostUseCase {
     func getPosts() -> [PostDTO]?
     func savePost(post: FavoritePostModel, completion: @escaping ModelOperationCompletionHandler)
     func getFavoritesPosts() -> [PostDTO]?
+    func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
 }
 
 class PostUseCaseImplementation: PostUseCase {
@@ -52,5 +53,9 @@ class PostUseCaseImplementation: PostUseCase {
         return posts.compactMap {
             PostDTO(with: $0)
         }
+    }
+    
+    func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String> {
+        return await apiGateway.createNewPost(parameters: parameters)
     }
 }
