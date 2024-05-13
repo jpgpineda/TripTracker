@@ -30,7 +30,7 @@ class PostApiGatewayImplementation: PostApiGateway {
         guard let urlRequest = parameters.apiRequest else { return .failure(ApiError.unknown) }
         do {
             let response = try await apiClient.fetch(type: PostResponse.self, with: urlRequest)
-            savePosts(posts: response.data)
+            //savePosts(posts: response.data)
             return .success(response)
         } catch {
             return .failure(ApiError.requestFailed(description: error.localizedDescription))

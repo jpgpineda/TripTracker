@@ -21,7 +21,7 @@
 "ups"                       = "Ups!";
 
 // MARK: Posts
-"comments"                  = "See the @d comments";
+"comments"                  = "See the %d comments";
 "postedOn"                  = "%d days ago";
 "commentsTitle"             = "Comments";
 "addCommentHint"            = "Add comment";
@@ -29,11 +29,15 @@
 "selectPicture"             = "Select picture";
 "postDescriptionHint"       = "Describe your picture";
 "newPostConfirmation"       = "Your post has been created successfully";
-"share"                     = "Share";
-"gallery"                   = "Gallery";
-"camera"                    = "Camera";
-"cancel"                    = "Cancel";
+"savedPostConfirmation"     = "Your post has been saved successfully";
+"postReported"              = "The post has been reported";
+"reportPost"                = "Do you want to report this post?";
 
 // MARK: Tools
 "atenttion"                 = "Atenttion!!";
 "confirm"                   = "Ok";
+"report"                    = "Report";
+"cancel"                    = "Cancel";
+"share"                     = "Share";
+"gallery"                   = "Gallery";
+"camera"                    = "Camera";

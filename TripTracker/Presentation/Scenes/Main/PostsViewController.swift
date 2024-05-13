@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class PostsViewController: UIViewController {
     ///////////////////////////////////////
@@ -16,15 +17,40 @@ class PostsViewController: UIViewController {
     // MARK: Properties
     ///////////////////////////////////////
     var posts: [PostDTO] = [PostDTO]()
+    var cancelBag = Set<AnyCancellable>()
+    var viewModel: PostsViewModel?
+    private let configurator = PostsConfiguratorImplementation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = configurator.configure()
         setupView()
     }
     
     private func setupView() {
         postsTable.registerCell(PostTableViewCell.identifier)
         postsTable.dataSource = self
+        bind()
+    }
+    
+    private func bind() {
+        viewModel?.input.viewDidLoad.send()
+        viewModel?.output.showLoader.sink(receiveValue: { [weak self] isShowing in
+            if isShowing {
+                self?.showLoader()
+            } else {
+                self?.dismissLoader()
+            }
+        }).store(in: &cancelBag)
+        
+        viewModel?.output.showMessage.sink(receiveValue: { [weak self] message in
+            self?.showMessage(message: message)
+        }).store(in: &cancelBag)
+        
+        viewModel?.output.updatePosts.sink(receiveValue: { [weak self] posts in
+            self?.posts = posts
+            self?.postsTable.reloadData()
+        }).store(in: &cancelBag)
     }
     
     @IBAction func addNewPost(_ sender: UIBarButtonItem) {
@@ -40,18 +66,26 @@ extension PostsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as? PostTableViewCell else { return UITableViewCell() }
-        cell.setupView(post: posts[indexPath.row])
+        let post = posts[indexPath.row]
+        cell.setupView(post: post)
         
-        cell.savedButtonPressed.compactMap {$0}.sink { _ in
-            // TODO: Add logic to save the post into favorites
+        cell.savedButtonPressed.compactMap {$0}.sink { [weak self] _ in
+            self?.viewModel?.input.savePost.send(post)
         }.store(in: &cell.cancellables)
         
-        cell.commentsButtonPressed.compactMap {$0}.sink { _ in
-            // TODO: Add logic to present the comments screen
+        cell.commentsButtonPressed.compactMap {$0}.sink { [weak self] _ in
+            guard let viewController = ModuleManager.shared.postDependency.makeCommentsViewController(comments: post.commets) else { return }
+            self?.navigationController?.present(viewController, animated: true)
         }.store(in: &cell.cancellables)
         
-        cell.moreActionsPressed.compactMap {$0}.sink { _ in
-            // TODO: Add logic to present options alert
+        cell.moreActionsPressed.compactMap {$0}.sink { [weak self] _ in
+            self?.showConfimation(title: .Localized.reportPost,
+                                  message: .empty,
+                                  cancel: .Localized.cancel,
+                                  confirm: .Localized.report,
+                                  confirmAction: {
+                self?.showMessage(message: .Localized.postReported)
+            }, isCancelAnOption: true)
         }.store(in: &cell.cancellables)
         
         return cell

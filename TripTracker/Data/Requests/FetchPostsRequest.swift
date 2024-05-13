@@ -9,7 +9,7 @@ import Foundation
 
 struct FetchPostsRequest: ApiRequest {
     var stringUrl: String {
-        return Host.mainMock + ""
+        return Host.mainMock + "7e4520aa-ef33-41b2-9c4b-4fe380dbf58f"
     }
     
     var apiRequest: URLRequest? {

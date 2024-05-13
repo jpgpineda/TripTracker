@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SDWebImage
 
 class CommentTableViewCell: UITableViewCell {
     ///////////////////////////////////////
@@ -30,7 +31,7 @@ class CommentTableViewCell: UITableViewCell {
     }
     
     func setupView(comment: CommentDTO) {
-        // TODO: Add logic to retrieve the image from web
+        userImage.sd_setImage(with: comment.user.imageUrl)
         userNameLabel.text = comment.user.userName
         descriptionLabel.text = comment.description
         postDateLabel.text = comment.formattedPostDate

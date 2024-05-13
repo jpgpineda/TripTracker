@@ -8,6 +8,7 @@
 import Foundation
 
 extension Int {
-    static let one: Int = 1
-    static let two: Int = 2
+    static let one: Int     = 1
+    static let two: Int     = 2
+    static let thirty: Int  = 30
 }

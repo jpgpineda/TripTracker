@@ -32,14 +32,18 @@ extension String {
         static var selectPicture: String { return getLocalizedString(#function) }
         static var postDescriptionHint: String { return getLocalizedString(#function) }
         static var newPostConfirmation: String { return getLocalizedString(#function) }
-        static var share: String { return getLocalizedString(#function) }
-        static var gallery: String { return getLocalizedString(#function) }
-        static var camera: String { return getLocalizedString(#function) }
-        static var cancel: String { return getLocalizedString(#function) }
+        static var savedPostConfirmation: String { return getLocalizedString(#function) }
+        static var postReported: String { return getLocalizedString(#function) }
+        static var reportPost: String { return getLocalizedString(#function) }
         
         // MARK: Tools
         static var atenttion: String { return getLocalizedString(#function) }
         static var confirm: String { return getLocalizedString(#function) }
+        static var report: String { return getLocalizedString(#function) }
+        static var cancel: String { return getLocalizedString(#function) }
+        static var share: String { return getLocalizedString(#function) }
+        static var gallery: String { return getLocalizedString(#function) }
+        static var camera: String { return getLocalizedString(#function) }
         
         internal static func getLocalizedString(_ key: String) -> String {
             return NSLocalizedString(key, comment: key)

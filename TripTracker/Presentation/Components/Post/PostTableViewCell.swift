@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import SDWebImage
 
 class PostTableViewCell: UITableViewCell {
     ///////////////////////////////////////
@@ -28,6 +29,8 @@ class PostTableViewCell: UITableViewCell {
     let moreActionsPressed = PassthroughSubject<Void, Never>()
     let savedButtonPressed = PassthroughSubject<Void, Never>()
     let commentsButtonPressed = PassthroughSubject<Void, Never>()
+    var isLiked: Bool = false
+    var isSaved: Bool = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,10 +43,14 @@ class PostTableViewCell: UITableViewCell {
     }
     
     func setupView(post: PostDTO) {
+        postImage.layer.cornerRadius = .eight
+        userImage.setupCircularImage()
         userNameLabel.text = post.user.userName
         postDescriptionLabel.text = post.description
         postCommentsLabel.text = post.formattedComments
         postDateLabel.text = post.formattedPostDate
+        postImage.sd_setImage(with: post.imageURl)
+        userImage.sd_setImage(with: post.user.imageUrl)
         setupGestureForComments()
         setupGestureForImage()
     }
@@ -70,11 +77,13 @@ class PostTableViewCell: UITableViewCell {
     }
     
     private func handleLikeState(button: UIButton) {
-        button.setImage(button.isSelected ? UIImage(systemName: Constants.heartFilled) : UIImage(systemName: Constants.heart), for: .normal)
+        isLiked = !isLiked
+        button.setImage(isLiked ? UIImage(systemName: Constants.heartFilled) : UIImage(systemName: Constants.heart), for: .normal)
     }
     
     @IBAction func savePost(_ sender: UIButton) {
-        sender.setImage(sender.isSelected ? UIImage(systemName: Constants.bookmarkFilled) : UIImage(systemName: Constants.bookmark), for: .normal)
+        isSaved = !isSaved
+        sender.setImage(isSaved ? UIImage(systemName: Constants.bookmarkFilled) : UIImage(systemName: Constants.bookmark), for: .normal)
         savedButtonPressed.send()
     }
     
