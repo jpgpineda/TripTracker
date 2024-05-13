@@ -18,7 +18,7 @@ struct Post: Codable {
     let likesCount, id: Int
     let from: User
     let actions: [Action]
-    let comments: [Comment]
+    let comments: [Comment]?
     let postedOn: Date
     let createdAt: Date
 
