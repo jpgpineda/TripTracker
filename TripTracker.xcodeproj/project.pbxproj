@@ -84,6 +84,7 @@
 		08E447E72BF21C7900F1E6F7 /* CommentIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */; };
 		08E447E92BF21FD000F1E6F7 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */; };
 		08E447EB2BF223C600F1E6F7 /* FavoritesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */; };
+		08E447ED2BF22DEB00F1E6F7 /* TripTrackerBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447EC2BF22DEB00F1E6F7 /* TripTrackerBaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentIdentity.swift; sourceTree = "<group>"; };
 		08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesConfigurator.swift; sourceTree = "<group>"; };
+		08E447EC2BF22DEB00F1E6F7 /* TripTrackerBaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerBaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				082BDBD82BF03D11006D1B58 /* TripTrackerTests.swift */,
+				08E447EC2BF22DEB00F1E6F7 /* TripTrackerBaseTest.swift */,
 			);
 			path = TripTrackerTests;
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E447ED2BF22DEB00F1E6F7 /* TripTrackerBaseTest.swift in Sources */,
 				082BDBD92BF03D11006D1B58 /* TripTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
