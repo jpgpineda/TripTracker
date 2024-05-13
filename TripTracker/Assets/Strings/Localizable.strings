@@ -34,6 +34,7 @@
 "postReported"              = "The post has been reported";
 "reportPost"                = "Do you want to report this post?";
 "emptyFavorites"            = "You don't have any favorites yet";
+"withoutComments"           = "No comments yet";
 
 // MARK: Tools
 "atenttion"                 = "Atenttion!!";

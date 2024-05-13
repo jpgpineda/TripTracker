@@ -37,6 +37,7 @@ extension String {
         static var postReported: String { return getLocalizedString(#function) }
         static var reportPost: String { return getLocalizedString(#function) }
         static var emptyFavorites: String { return getLocalizedString(#function) }
+        static var withoutComments: String { return getLocalizedString(#function) }
         
         // MARK: Tools
         static var atenttion: String { return getLocalizedString(#function) }
