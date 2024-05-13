@@ -17,6 +17,7 @@ protocol PostApiGateway {
     func createNewPost(parameters: AddNewPostRequest) async -> ApiResult<String>
     func addComment(parameters: AddNewCommentRequest) async -> ApiResult<String>
     func addLikeToComment(parameters: AddLikeToCommentRequest) async -> ApiResult<String>
+    func deleteFavorite(postId: Int, completion: @escaping ModelOperationCompletionHandler)
 }
 
 class PostApiGatewayImplementation: PostApiGateway {
@@ -86,5 +87,10 @@ class PostApiGatewayImplementation: PostApiGateway {
         } catch {
             return .failure(ApiError.requestFailed(description: error.localizedDescription))
         }
+    }
+    
+    func deleteFavorite(postId: Int, completion: @escaping ModelOperationCompletionHandler) {
+        guard let model = storageContext.getModel(model: PostModel.self, predicate: NSPredicate(format: "id == %d", postId))?.first else { return }
+        storageContext.deleteModel(model: model, completion: completion)
     }
 }

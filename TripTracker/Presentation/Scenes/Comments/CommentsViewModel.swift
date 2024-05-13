@@ -10,11 +10,11 @@ import Combine
 
 @MainActor
 class CommentsViewModel {
-    var cancelBag = Set<AnyCancellable>()
-    let useCase: PostUseCase
+    private var cancelBag = Set<AnyCancellable>()
+    private let useCase: PostUseCase
     let input = Input()
     let output = Output()
-    var description: String = .empty
+    private var description: String = .empty
     
     class Input {
         let addNewComment = PassthroughSubject<Int, Never>()

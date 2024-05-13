@@ -82,6 +82,8 @@
 		08E447E32BF21AEA00F1E6F7 /* AddLikeToComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E22BF21AEA00F1E6F7 /* AddLikeToComment.swift */; };
 		08E447E52BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E42BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift */; };
 		08E447E72BF21C7900F1E6F7 /* CommentIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */; };
+		08E447E92BF21FD000F1E6F7 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */; };
+		08E447EB2BF223C600F1E6F7 /* FavoritesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,8 @@
 		08E447E22BF21AEA00F1E6F7 /* AddLikeToComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeToComment.swift; sourceTree = "<group>"; };
 		08E447E42BF21B1900F1E6F7 /* AddLikeToCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLikeToCommentRequest.swift; sourceTree = "<group>"; };
 		08E447E62BF21C7900F1E6F7 /* CommentIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentIdentity.swift; sourceTree = "<group>"; };
+		08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,6 +513,8 @@
 			isa = PBXGroup;
 			children = (
 				08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */,
+				08E447E82BF21FD000F1E6F7 /* FavoritesViewModel.swift */,
+				08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -716,6 +722,7 @@
 				08E447C02BF1AA8700F1E6F7 /* MakePostResponse.swift in Sources */,
 				08E447AC2BF1938700F1E6F7 /* UITextField+ext.swift in Sources */,
 				0817E7E12BF1456E007AA78E /* FavoritePostModel.swift in Sources */,
+				08E447E92BF21FD000F1E6F7 /* FavoritesViewModel.swift in Sources */,
 				08E447BE2BF1A50E00F1E6F7 /* NewPostViewModel.swift in Sources */,
 				08E447D32BF2088000F1E6F7 /* Double+ext.swift in Sources */,
 				0817E7D92BF1287E007AA78E /* MakeComment.swift in Sources */,
@@ -737,6 +744,7 @@
 				0817E7CF2BF11E48007AA78E /* PostModel.swift in Sources */,
 				0817E7DC2BF13EEE007AA78E /* PostApiGateway.swift in Sources */,
 				0817E7D12BF11E81007AA78E /* String+ext.swift in Sources */,
+				08E447EB2BF223C600F1E6F7 /* FavoritesConfigurator.swift in Sources */,
 				08E447DC2BF213D200F1E6F7 /* CommentsViewModel.swift in Sources */,
 				08E4479F2BF1531C00F1E6F7 /* UITableView+ext.swift in Sources */,
 				08E447A32BF1574400F1E6F7 /* Int+ext.swift in Sources */,
