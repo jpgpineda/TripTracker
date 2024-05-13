@@ -147,6 +147,7 @@
 		082BDC342BF04AD6006D1B58 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		082BDC352BF04AD6006D1B58 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		082BDC382BF04BAA006D1B58 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		08C94B8E2BF24E0600C9EEDF /* TripTracker.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TripTracker.xctestplan; sourceTree = "<group>"; };
 		08E4479C2BF151F900F1E6F7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		08E4479E2BF1531C00F1E6F7 /* UITableView+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ext.swift"; sourceTree = "<group>"; };
 		08E447A02BF156DD00F1E6F7 /* Calendar+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ext.swift"; sourceTree = "<group>"; };
@@ -183,7 +184,6 @@
 		08E447EA2BF223C600F1E6F7 /* FavoritesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesConfigurator.swift; sourceTree = "<group>"; };
 		08E448042BF23AD900F1E6F7 /* TripTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E448062BF23AD900F1E6F7 /* TripTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerTests.swift; sourceTree = "<group>"; };
-		08E4480F2BF23B9700F1E6F7 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		08E448192BF23FEB00F1E6F7 /* TripTrackerBaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTrackerBaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -288,7 +288,7 @@
 		082BDBB52BF03D10006D1B58 = {
 			isa = PBXGroup;
 			children = (
-				08E4480F2BF23B9700F1E6F7 /* TestPlan.xctestplan */,
+				08C94B8E2BF24E0600C9EEDF /* TripTracker.xctestplan */,
 				082BDBC02BF03D10006D1B58 /* TripTracker */,
 				08E448052BF23AD900F1E6F7 /* TripTrackerTests */,
 				082BDBBF2BF03D10006D1B58 /* Products */,
